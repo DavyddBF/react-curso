@@ -1,4 +1,4 @@
-# Arquivo onde aprendi props e componentes
+# Aprendendo props e componentes
 
 ## Script
 
