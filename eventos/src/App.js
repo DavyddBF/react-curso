@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import './App.css'
 
+import Membro from './components/Membro';
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -11,6 +13,7 @@ class App extends Component {
         return (
             <div>
                 <h1>Olá mundo</h1>
+                <p>Eu sou <Membro /></p>
             </div>
         );
     }
