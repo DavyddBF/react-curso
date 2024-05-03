@@ -10,15 +10,15 @@ class Membro extends Component {
         this.entrar = this.entrar.bind(this);
     }
 
-    entrar() {
-        this.setState({ nome: 'Davyd' });
+    entrar(nomeUser) {
+        this.setState({ nome: nomeUser});
     }
 
     render() {
         return (
             <div>
                 <h1>Bem-vindo(a) {this.state.nome}</h1>
-                <button onClick={this.entrar}>Entrar Sistema</button>
+                <button onClick={() => this.entrar('Davyd')}>Entrar Sistema</button>
                 <button onClick={() => this.setState({ nome: '' })}>Sair</button>
             </div>
         );
