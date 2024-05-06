@@ -5,19 +5,36 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      status: 1
+      status: true
     };
+
+    this.entrar = this.entrar.bind(this);
+    this.sair = this.sair.bind(this);
+  }
+
+  entrar() {
+    this.setState({ status: true });
+  }
+
+  sair() {
+    this.setState({ status: false });
   }
 
   render() {
     return (
       <div>
-        {
-          this.state.status === 1 &&
-          <h1>Bem vindo ao sistema!!</h1>
+        { //Utilizando operador ternário
+          this.state.status ? // se sim...
+          <div>
+            <h1>Bem vindo usuário!!</h1>
+            <button onClick={ this.sair }>Sair do Sistema</button>
+          </div>
+          : //se não...
+          <div>
+            <h1>Bem vindo visitante!! Faça Login!!</h1>
+            <button onClick={ this.entrar }>Entrar no Sistema</button>
+          </div> 
         }
-        <br/>
-        <h1>Olá mundo</h1>
       </div>
     );
   }
