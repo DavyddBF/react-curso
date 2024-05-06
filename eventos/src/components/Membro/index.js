@@ -12,7 +12,6 @@ class Membro extends Component {
 
     entrar(nomeUser) {
         this.setState({ nome: nomeUser});
-        // Não consegui estudar hoje kkkkkk
     }
 
     render() {
