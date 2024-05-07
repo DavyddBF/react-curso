@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {
+        { // Mostra cada item do obj em state
           this.state.feed.map(item => {
             return (
               <div key={item.id}>
