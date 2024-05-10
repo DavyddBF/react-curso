@@ -6,15 +6,22 @@ class App extends Component{
     super(props);
     this.state = {
       email: '',
-      senha: ''
+      senha: '',
+      genero: 'outro'
     }
 
     this.trocaEmail = this.trocaEmail.bind(this);
+    this.trocaGenero = this.trocaGenero.bind(this);
   }
 
   trocaEmail(evento) {
     const textoDigitado = evento.target.value;
     this.setState({ email: textoDigitado });
+  }
+
+  trocaGenero(evento) {
+    const generoSelecionado = evento.target.value;
+    this.setState({ genero: generoSelecionado });
   }
 
   render() {
@@ -32,10 +39,19 @@ class App extends Component{
           const textoDigitado = evento.target.value;
           this.setState({ senha: textoDigitado });
         }} />
+        <br/>
+        <br/>
+        <label>Gênero</label>
+        <select name='genero' value={this.state.genero} onChange={ this.trocaGenero }>
+          <option value='masculino'>Masculino</option>
+          <option value='feminino'>Feminino</option>
+          <option value='outro'>Outro</option>
+        </select>
 
         <div>
           <h3>Email digitado: { this.state.email }</h3>
           <h3>Senha digitada: { this.state.senha }</h3>
+          <h3>Gênero selecionado: { this.state.genero.charAt(0).toUpperCase() + this.state.genero.slice(1) }</h3>
         </div>
       </div>
     );
