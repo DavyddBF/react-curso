@@ -5,7 +5,7 @@ class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      email: 'email@email',
+      email: '',
       senha: ''
     }
 
@@ -34,7 +34,8 @@ class App extends Component{
         }} />
 
         <div>
-          
+          <h3>Email digitado: { this.state.email }</h3>
+          <h3>Senha digitada: { this.state.senha }</h3>
         </div>
       </div>
     );
