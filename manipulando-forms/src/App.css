@@ -11,6 +11,6 @@ div {
 p {
   font-size: 1.5rem;
 }
-input {
+input, select {
   margin-left: 1rem;
 }
