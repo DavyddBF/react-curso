@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {
+        { // teste
           this.state.feed.map(item => {
             return (
               <div key={item.id}>
