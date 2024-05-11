@@ -7,15 +7,23 @@ class App extends Component {
     this.state = {
       nome: '',
       email: '',
-      senha: ''
+      senha: '',
+      error: ''
     }
 
     this.cadastrar = this.cadastrar.bind(this);
   }
 
-  cadastrar() {
+  cadastrar(evento) {
+    evento.preventDefault();
     const { nome, email, senha } = this.state;
-    alert(nome);
+
+    if(nome !== '' && email !== '' && senha !== '') {
+      alert(`Nome: ${nome} \n Email: ${email} \n Senha: ${senha}`);
+    } else {
+      this.setState({ error: 'OPS!!! Faltou preencher informações' })
+    }
+
   }
 
   render() {
@@ -24,6 +32,7 @@ class App extends Component {
         <h1>• Cadastro de Usuário •</h1>
         <br/><br/>
 
+        { this.state.error && <p className='erro'>{this.state.error}</p> }
         <form onSubmit={ this.cadastrar }>
           <div className='form__div'>
             <label>Nome:</label>
