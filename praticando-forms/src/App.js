@@ -14,7 +14,8 @@ class App extends Component {
   }
 
   cadastrar() {
-    alert('Olá');
+    const { nome, email, senha } = this.state;
+    alert(nome);
   }
 
   render() {
@@ -26,17 +27,17 @@ class App extends Component {
         <form onSubmit={ this.cadastrar }>
           <div className='form__div'>
             <label>Nome:</label>
-            <input type='text' value={this.state.nome} onChange={ (evento) => evento.target.value }/>
+            <input type='text' value={this.state.nome} onChange={ (evento) => this.setState({ nome: evento.target.value }) }/>
           </div>
           
           <div className='form__div'>
             <label>Email:</label>
-            <input type='text' value={this.state.email} onChange={ (evento) => evento.target.value }/> 
+            <input type='text' value={this.state.email} onChange={ (evento) => this.setState({ email: evento.target.value }) }/> 
           </div>
           
           <div className='form__div'>
             <label>Senha:</label>
-            <input type='text' value={this.state.senha} onChange={ (evento) => evento.target.value }/> 
+            <input type='text' value={this.state.senha} onChange={ (evento) => this.setState({ senha: evento.target.value }) }/> 
           </div>
           
           <button type='submit'>Cadastrar</button>
