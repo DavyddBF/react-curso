@@ -5,14 +5,42 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      titulo: "Olá mundo!!"
+      nome: '',
+      email: '',
+      senha: ''
     }
+
+    this.cadastrar = this.cadastrar.bind(this);
+  }
+
+  cadastrar() {
+    alert('Olá');
   }
 
   render() {
     return (
-      <div>
-        <h1>{ this.state.titulo }</h1>
+      <div className='principal'>
+        <h1>• Cadastro de Usuário •</h1>
+        <br/><br/>
+
+        <form onSubmit={ this.cadastrar }>
+          <div className='form__div'>
+            <label>Nome:</label>
+            <input type='text' value={this.state.nome} onChange={ (evento) => evento.target.value }/>
+          </div>
+          
+          <div className='form__div'>
+            <label>Email:</label>
+            <input type='text' value={this.state.email} onChange={ (evento) => evento.target.value }/> 
+          </div>
+          
+          <div className='form__div'>
+            <label>Senha:</label>
+            <input type='text' value={this.state.senha} onChange={ (evento) => evento.target.value }/> 
+          </div>
+          
+          <button type='submit'>Cadastrar</button>
+        </form>
       </div>
     );
   }
