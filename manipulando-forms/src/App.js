@@ -61,3 +61,12 @@ class App extends Component{
 }
 
 export default App;
+
+
+function Input() {
+  return (
+    <div>
+      
+    </div>
+  );
+}
