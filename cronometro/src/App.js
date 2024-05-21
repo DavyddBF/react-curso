@@ -11,9 +11,28 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Hello World</h1>
+      <div className='container'>
+        <img className='img' src={ require('./assets/cronometro.png') } />
+        <a className='timer'>0.0</a>
+        <div className='area-btn'>
+          <Btn title='Vai'/>
+          <Btn title='Limpar' />
+        </div>
       </div>
+    );
+  }
+}
+
+class Btn extends Component{
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <>
+        <a className='btn'>{this.props.title}</a>
+      </>
     );
   }
 }
