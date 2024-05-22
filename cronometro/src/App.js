@@ -5,8 +5,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      tempo: 0
     };
+
+    this.vai = this.vai.bind(this);
+    this.limpar = this.limpar.bind(this);
+  }
+
+  vai() {
+
+  }
+
+  limpar() {
+    
   }
 
   render() {
