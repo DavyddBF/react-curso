@@ -26,6 +26,7 @@ class App extends Component {
         state.tempo += 0.1;
         this.setState(state);
       }, 100)
+
       this.state.btnTitle = ['Pausar', 'Limpar'];
     }
 
@@ -33,7 +34,16 @@ class App extends Component {
   }
 
   limpar() {
+    if(this.timer !== null) {
+      clearInterval(this.timer);
+      this.timer = null;
+    }
 
+    let state = this.state;
+    
+    state.tempo = 0
+    state.btnTitle = ['Vai', 'Limpar'];
+    this.setState(state);
   }
 
   render() {
