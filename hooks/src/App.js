@@ -7,7 +7,9 @@ function App() {
     'Tarefa 2'
   ]);
 
-  const [nome, setNome] = useState('Davyd');
+  function addTarefa() {
+    setTarefa([...tarefas, 'Ola mundo']);
+  }
 
   return (
     <div>
@@ -19,7 +21,7 @@ function App() {
         }
       </ul>
 
-      <h1>{nome}</h1>
+      <button onClick={ addTarefa }>Adicionar</button>
     </div>
   );
 }
