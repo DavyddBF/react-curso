@@ -4,13 +4,15 @@ import './App.css';
 function App() {
 
   const [tarefas, setTarefa] = useState([
-    'Tarefa 1',
-    'Tarefa 2'
+    'Lavar louça',
+    'Limpar casa'
   ]);
 
   const [input, setInput] = useState('');
 
+  useEffect( () => {
 
+  }, [ tarefas ]);
 
   function addTarefa() {
     setTarefa([...tarefas, input]);
