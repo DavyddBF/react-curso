@@ -10,8 +10,10 @@ function App() {
 
   const [input, setInput] = useState('');
 
-  useEffect( () => {
+  
 
+  useEffect( () => {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
   }, [ tarefas ]);
 
   function addTarefa() {
