@@ -1,47 +1,44 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
-
+import { useState, useEffect, useMemo, useCallback } from 'react';
+import './App.css';
 
 function App() {
 
-  const [tarefas, setTarefas] = useState([]);
+  const [tarefas, setTarefa] = useState(['Java', 'Python']);
   const [input, setInput] = useState('');
 
-
-  useEffect(()=>{
+  useEffect( () => {
     const tarefasStorage = localStorage.getItem('tarefas');
 
-    if(tarefasStorage){
-      setTarefas(JSON.parse(tarefasStorage));
-    }
-
+    if(tarefasStorage) setTarefa(JSON.parse(tarefasStorage));
   }, []);
 
-
-  useEffect(()=> {
+  useEffect( () => {
     localStorage.setItem('tarefas', JSON.stringify(tarefas));
-  }, [tarefas]);
+  }, [ tarefas ]);
 
+  const totalTarefas = useMemo( () => tarefas.length, [ tarefas ])
 
-  const handleAdd = useCallback(() => {
-    setTarefas([...tarefas, input]);
+  const addTarefa = useCallback(() => {
+    setTarefa([...tarefas, input]);
     setInput('');
-  }, [input, tarefas]);
-
-  const totalTarefas = useMemo(()=> tarefas.length, [tarefas]);
+  }, [ tarefas, input ]);
 
   return (
     <div>
-
       <ul>
-        {tarefas.map(tarefa => (
-          <li key={tarefa}>{tarefa}</li>
-        ))}
+        {
+          tarefas.map( tarefa => (
+            <li key={ tarefa }>{ tarefa }</li>
+          ))
+        }
       </ul>
-      <br/>    
-      <strong>Você tem {totalTarefas} tarefas!</strong><br/>
-      <input type="text" value={input} onChange={e => setInput(e.target.value)}/>    
-      <button type="button" onClick={handleAdd}>Adicionar</button>
+      <br/>
 
+      <strong>Você tem {totalTarefas} tarefas!!</strong>
+      <br/> 
+
+      <input type='text' value={ input }  onChange={ evento => setInput(evento.target.value) } />
+      <button type='button' onClick={ addTarefa }>Adicionar</button>
     </div>
   );
 }
