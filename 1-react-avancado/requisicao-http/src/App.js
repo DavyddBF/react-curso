@@ -25,6 +25,17 @@ function App() {
       <header>
         <strong>React Nutri</strong>
       </header>
+
+      {nutri.map( item => {
+        return (
+          <article className='post' key={ item.id }>
+            <strong>{ item.titulo }</strong>
+            <img className='capa' src={ item.capa } alt={ item.titulo } />
+            <p className='subtitulo'>{ item.subtitulo }</p>
+            <a className='btn'>Acessar</a>
+          </article>
+        );
+      })}
     </div>
   );
 }
