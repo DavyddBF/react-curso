@@ -22,7 +22,9 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Hello world</h1>
+      <header>
+        <strong>React Nutri</strong>
+      </header>
     </div>
   );
 }
