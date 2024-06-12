@@ -1,9 +1,9 @@
-
+import './style.css'
 
 function Footer() {
 	return (
 		<div>
-			<p>Direitos de @Davyd</p>
+			<p>Direitos de <strong>@Davyd</strong></p>
 		</div>
 	);
 }
