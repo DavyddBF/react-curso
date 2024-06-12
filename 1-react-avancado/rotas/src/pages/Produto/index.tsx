@@ -1,8 +1,12 @@
+import { useParams } from "react-router-dom";
+
 function Produto(): JSX.Element {
+    const { id } = useParams();
+
     return (
-        <div>
+        <div className="container">
             <h2>Detalhes dos Produtos</h2>
-            <span>Meu produto: 123</span>
+            <span>Meu produto: { id }</span>
         </div>
     );
 }
