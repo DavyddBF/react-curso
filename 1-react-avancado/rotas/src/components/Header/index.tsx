@@ -9,7 +9,7 @@ function Header(): JSX.Element {
             <div>
                 <Link to='/'>Home</Link>
                 <Link to='/sobre'>Sobre</Link>
-                <Link to='/contato'>contato</Link>    
+                <Link to='/contato'>Contato</Link>    
             </div>
         </header>
     );
