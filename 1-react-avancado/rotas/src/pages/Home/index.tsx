@@ -1,14 +1,7 @@
-import { Link } from "react-router-dom";
-
 function Home(): JSX.Element {
   return (
     <div className='container'>
       <h1>Bem vindo ao Home</h1>
-      <br/>
-      <br/>
-      
-      <Link to='/sobre'>Sobre</Link>
-      <Link to='/contato'>Contato</Link>
     </div>
   )
 }
