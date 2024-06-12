@@ -1,4 +1,4 @@
-function Sobre() {
+function Sobre(): JSX.Element {
 
     return (
       <div>
