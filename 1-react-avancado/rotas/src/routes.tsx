@@ -5,6 +5,7 @@ import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 
 import Header from './components/Header';
+import Footer from './components/Footer'
 
 
 function Rotas(): JSX.Element {
@@ -16,6 +17,7 @@ function Rotas(): JSX.Element {
                 <Route path='/sobre' element={ <Sobre/> } />
                 <Route path='/contato' element={ <Contato/> } />
             </Routes>
+            <Footer/>
         </BrowserRouter>
     );
 }
