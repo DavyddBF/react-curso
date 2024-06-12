@@ -1,11 +1,10 @@
+import Rotas from './routes';
 import './App.css';
 
 function App() {
 
   return (
-    <div>
-      <h1>Bem vindo ao App</h1>
-    </div>
+    <Rotas/>
   )
 }
 
