@@ -5,7 +5,8 @@ function Sobre(): JSX.Element {
     <div>
       <h1>Bem vindo ao Sobre</h1>
 
-      <Link to='/'>Pagina Home</Link>
+      <Link to='/'>Home</Link>
+      <Link to='/contato'>Contato</Link>
     </div>
   )
 }

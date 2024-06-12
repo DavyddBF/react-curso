@@ -5,7 +5,8 @@ function Home(): JSX.Element {
     <div>
       <h1>Bem vindo ao Home</h1>
 
-      <Link to='/sobre'>Pagina Sobre</Link>
+      <Link to='/sobre'>Sobre</Link>
+      <Link to='/contato'>Contato</Link>
     </div>
   )
 }
