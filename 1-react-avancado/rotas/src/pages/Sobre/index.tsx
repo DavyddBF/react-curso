@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Sobre(): JSX.Element {
   return (
-    <div>
+    <div className='container'>
       <h1>Bem vindo ao Sobre</h1>
       <br/>
       <br/>
