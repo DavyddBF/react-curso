@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function Error(): JSX.Element {
     return (
@@ -8,7 +8,12 @@ function Error(): JSX.Element {
             <br/>
             <h3>Segue os seguintes links encontrados:</h3>
             <ul>
-                <li></li>
+                <li>
+                    <Link to='/'>Home</Link>
+                </li>
+                <li>
+                    <Link to='/filme'>Detalhes Filme</Link>
+                </li>
             </ul>
         </div>
     );
