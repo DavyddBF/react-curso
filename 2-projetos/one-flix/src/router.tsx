@@ -8,7 +8,7 @@ function Rotas(): JSX.Element {
         <BrowserRouter>
             <Routes>
                <Route path="/" element={ <Home/> } /> 
-               <Route path="/filme" element={ <Filme/> } /> 
+               <Route path="/filme/:id" element={ <Filme/> } /> 
             </Routes>
         </BrowserRouter>
     );
