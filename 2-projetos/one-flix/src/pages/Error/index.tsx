@@ -7,6 +7,7 @@ function Error(): JSX.Element {
             <br/>
             <br/>
             <h3>Segue os seguintes links encontrados:</h3>
+            <br/>
             <ul>
                 <li>
                     <Link to='/'>Home</Link>
