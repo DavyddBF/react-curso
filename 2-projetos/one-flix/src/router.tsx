@@ -6,7 +6,7 @@ import Favoritos from "./pages/Favoritos";
 
 import Error from "./pages/Error";
 
-function Rotas(): JSX.Element {
+function RouterApp(): JSX.Element {
     return (
         <BrowserRouter>
             <Routes>
@@ -20,4 +20,4 @@ function Rotas(): JSX.Element {
     );
 }
 
-export default Rotas;
+export default RouterApp;
