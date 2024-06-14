@@ -14,7 +14,7 @@ function Home(): JSX.Element {
                 }
             });
 
-            console.log(resposta);
+            console.log(resposta.data.results);
         }
 
         carregaApi();
