@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import api from "../../services/api";
 import Filme from "../../filmes";
+import './home.css';
 
 function Home(): JSX.Element {
     const [filmes, setFilmes] = useState<Filme[]>([]);
@@ -18,7 +19,7 @@ function Home(): JSX.Element {
                 }
             });
 
-            const resultados: Filme[] = resposta.data.results;
+            const resultados: Filme[] = resposta.data.results.slice(0, 10);
             setFilmes(resultados);
         }
 
@@ -27,14 +28,20 @@ function Home(): JSX.Element {
 
     return (
         <div className="container">
-            <div>
+            <div className="filmes__lista">
                 {
                     filmes.map((filme: Filme) => {
                         return (
                             <article key={ filme.id }>
-                                <strong>{ filme.title }</strong>
-                                <img src={ `https://image.tmdb.org/t/p/original/${ filme.poster_path }` } alt={ filme.title } />
-                                <Link to={ `/filme/${ filme.id }` }>Acessar</Link>
+                                <div>
+                                    <strong className="filmes__titulo">{ filme.title }</strong>
+                                </div>
+                                <div>
+                                    <img className="filmes__img" src={ `https://image.tmdb.org/t/p/original/${ filme.poster_path }` } alt={ filme.title } />
+                                </div>
+                                <div>
+                                    <Link className="filmes__acessar" to={ `/filme/${ filme.id }` }>Acessar</Link>
+                                </div>
                             </article>
                         );
                     })
