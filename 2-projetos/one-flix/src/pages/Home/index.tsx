@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AxiosResponse } from "axios";
+import { Link } from "react-router-dom";
 
 import api from "../../services/api";
 import Filme from "../../filmes";
@@ -27,6 +28,17 @@ function Home(): JSX.Element {
     return (
         <div className="container">
             <div>
+                {
+                    filmes.map((filme: Filme) => {
+                        return (
+                            <article key={ filme.id }>
+                                <strong>{ filme.title }</strong>
+                                <img src={ `https://image.tmdb.org/t/p/original/${ filme.poster_path }` } alt={ filme.title } />
+                                <Link to={ `/filme/${ filme.id }` }>Acessar</Link>
+                            </article>
+                        );
+                    })
+                }
             </div>
         </div>
     );
