@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
+import { AxiosResponse } from "axios";
+
 import api from "../../services/api";
+import Filme from "../../filmes";
 
 function Home(): JSX.Element {
-    const [filmes, setFilmes] = useState();
+    const [filmes, setFilmes] = useState<Filme[]>([]);
 
     useEffect( () => {
-        async function carregaApi() {
-            const resposta = await api.get('movie/now_playing', {
+        async function carregaApi(): Promise<void> {
+            const resposta: AxiosResponse<any, any> = await api.get('movie/now_playing', {
                 params: {
                     api_key: '184ee90db92bf2330058b37260977a7f',
                     language: 'pt-BR',
@@ -14,15 +17,17 @@ function Home(): JSX.Element {
                 }
             });
 
-            console.log(resposta.data.results);
+            const resultados: Filme[] = resposta.data.results;
+            setFilmes(resultados);
         }
 
         carregaApi();
     }, []);
 
     return (
-        <div>
-            <h1>Bem vindo ao Home</h1>
+        <div className="container">
+            <div>
+            </div>
         </div>
     );
 }
