@@ -19,7 +19,7 @@ function Home(): JSX.Element {
                 }
             });
 
-            const resultados: Filme[] = resposta.data.results.slice(0, 10);
+            const resultados: Filme[] = resposta.data.results;
             setFilmes(resultados);
         }
 
