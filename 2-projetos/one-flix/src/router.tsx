@@ -8,6 +8,7 @@ import Error from "./pages/Error";
 
 // Componentes
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 function RouterApp(): JSX.Element {
@@ -17,10 +18,11 @@ function RouterApp(): JSX.Element {
             <Routes>
                <Route path="/" element={ <Home/> } />
                <Route path="/favoritos" element={ <Favoritos/> } />
-               <Route path="/filme/:id" element={ <Filme/> } /> 
+               <Route path="/filme/:id" element={ <Filme/> } />
 
                <Route path="*" element={ <Error/> } />
             </Routes>
+            <Footer/>
         </BrowserRouter>
     );
 }
