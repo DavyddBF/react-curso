@@ -3,20 +3,14 @@ import './error.css';
 
 function Error(): JSX.Element {
     return (
-        <div className="container">
-            <h1>Página não encontrada!!</h1>
-            <br/>
-            <br/>
-            <h3>Segue os seguintes links encontrados:</h3>
-            <br/>
-            <ul>
-                <li>
-                    <Link to='/'>Home</Link>
-                </li>
-                <li>
-                    <Link to='/filme'>Detalhes Filme</Link>
-                </li>
-            </ul>
+        <div className="erro">
+            <div>
+                <h1>404</h1>
+                <h2>Página não encontrada!!</h2>
+                
+                <h3>Segue os seguintes links encontrados:</h3>
+                <Link to='/'>Voltar para a Home</Link>
+            </div>
         </div>
     );
 }
