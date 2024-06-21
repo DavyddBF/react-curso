@@ -1,3 +1,10 @@
 .container {
     height: 87.8vh;
 }
+
+.loading {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
