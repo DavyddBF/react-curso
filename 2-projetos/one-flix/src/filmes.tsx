@@ -1,4 +1,4 @@
-interface Filme {
+interface FilmeType {
     adult?: boolean,
     backdrop_path?: string,
     genre_ids?: [
@@ -19,4 +19,4 @@ interface Filme {
     vote_count?: number
 }
 
-export default Filme;
+export default FilmeType;
