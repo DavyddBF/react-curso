@@ -8,6 +8,7 @@ import './home.css';
 
 function Home(): JSX.Element {
     const [filmes, setFilmes] = useState<Filme[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect( () => {
         async function carregaApi(): Promise<void> {
@@ -21,10 +22,19 @@ function Home(): JSX.Element {
 
             const resultados: Filme[] = resposta.data.results;
             setFilmes(resultados);
+            setLoading(false);
         }
 
         carregaApi();
     }, []);
+
+    if(loading) {
+        return (
+            <div className="loading">
+                <h1>Carregando...</h1>
+            </div>
+        );
+    }
 
     return (
         <div className="container">
