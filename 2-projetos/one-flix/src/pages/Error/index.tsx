@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Error(): JSX.Element {
     return (
-        <div>
+        <div className="container">
             <h1>Página não encontrada!!</h1>
             <br/>
             <br/>
