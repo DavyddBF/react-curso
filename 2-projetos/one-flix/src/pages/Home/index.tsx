@@ -3,11 +3,11 @@ import { AxiosResponse } from "axios";
 import { Link } from "react-router-dom";
 
 import api from "../../services/api";
-import Filme from "../../filmes";
+import FilmeType from "../../filmes";
 import './home.css';
 
 function Home(): JSX.Element {
-    const [filmes, setFilmes] = useState<Filme[]>([]);
+    const [filmes, setFilmes] = useState<FilmeType[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect( () => {
@@ -20,7 +20,7 @@ function Home(): JSX.Element {
                 }
             });
 
-            const resultados: Filme[] = resposta.data.results;
+            const resultados: FilmeType[] = resposta.data.results;
             setFilmes(resultados);
             setLoading(false);
         }
@@ -40,7 +40,7 @@ function Home(): JSX.Element {
         <div className="container">
             <div className="filmes__lista">
                 {
-                    filmes.map((filme: Filme) => {
+                    filmes.map((filme: FilmeType) => {
                         return (
                             <article key={ filme.id }>
                                 <div>
