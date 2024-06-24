@@ -42,9 +42,12 @@ function Filme(): JSX.Element {
     }
 
     return (
-        <div className="container">
+        <div className="filme-div">
             <h1>{ filme.title }</h1>
             <img src={ `https://image.tmdb.org/t/p/original/${filme.backdrop_path}` } alt="" />
+
+            <h3>Sinopse</h3>
+            <span>{ filme.overview }</span>
         </div>
     );
 }
