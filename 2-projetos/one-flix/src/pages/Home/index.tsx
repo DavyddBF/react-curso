@@ -8,7 +8,7 @@ import './home.css';
 
 function Home(): JSX.Element {
     const [filmes, setFilmes] = useState<FilmeType[]>([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect( () => {
         async function carregaApi(): Promise<void> {
