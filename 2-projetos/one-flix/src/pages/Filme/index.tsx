@@ -42,12 +42,24 @@ function Filme(): JSX.Element {
     }
 
     return (
-        <div className="filme-div">
-            <h1>{ filme.title }</h1>
-            <img src={ `https://image.tmdb.org/t/p/original/${filme.backdrop_path}` } alt="" />
-
-            <h3>Sinopse</h3>
-            <span>{ filme.overview }</span>
+        <div className="filme-container">
+            <div className="filme-div">
+                <div>
+                    <h1>{ filme.title }</h1>
+                    <img src={ `https://image.tmdb.org/t/p/original/${filme.backdrop_path}` } alt="" />
+                </div>
+                <div>
+                    <h3>Sinopse</h3>
+                    <span>{ filme.overview }</span>
+                    <strong>Avaliação: { filme.vote_average?.toFixed(2) } / 10</strong>
+                </div>
+                <div className="area__btn">
+                    <button>Salvar</button>
+                    <button>
+                        <a href="">Trailer</a>
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }
