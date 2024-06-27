@@ -53,6 +53,6 @@
 }
 
 .filmes__acessar:hover {
-    color: #333333;
-    background-color: #4992ff;
+    transition: all .5s;
+    background-color: #0046af;
 }
