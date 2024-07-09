@@ -11,9 +11,20 @@ function Favoritos(): JSX.Element {
         setFilme(listaFilme ? JSON.parse(listaFilme) : []);
     }, []);
 
+    function excluirFilme(id: any) {
+        let filmesFiltrados = filme.filter((cadaFilme) => {
+            return cadaFilme.id != id;
+        });
+
+        setFilme(filmesFiltrados);
+        localStorage.setItem('@oneflix', JSON.stringify(filmesFiltrados));
+    }
+
     return (
         <div className="meus__filmes">
             <h1>Filmes Favoritos:</h1>
+
+            {filme.length == 0 && <span>Nenhum filme nos seus favoritos :(</span>}
 
             <ul>
                 {filme.map((filme) => {
@@ -22,7 +33,7 @@ function Favoritos(): JSX.Element {
                             <span>{ filme.title }</span>
                             <div>
                                 <Link to={`/filme/${ filme.id }`}>Ver detalhes</Link>
-                                <button>Excluir</button>
+                                <button onClick={ () => excluirFilme(filme.id) }>Excluir</button>
                             </div>
                         </li>
                     );
