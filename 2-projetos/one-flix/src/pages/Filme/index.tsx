@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import api from "../../services/api";
 import FilmeType from "../../filmes";
@@ -7,7 +7,8 @@ import FilmeType from "../../filmes";
 import './filme.css';
 
 function Filme(): JSX.Element {
-    const { id }= useParams();
+    const { id } = useParams();
+    const navigate = useNavigate();
     const [filme, setFilme] = useState<FilmeType>({});
     const [loading, setLoading] = useState(true);
 
@@ -22,7 +23,9 @@ function Filme(): JSX.Element {
                 setFilme(resposta.data);
                 setLoading(false);
             }).catch(() => {
-                console.log("Erro");
+                console.log('Erro');
+
+                navigate('/', { replace: true });
             });
         }
 
@@ -31,7 +34,7 @@ function Filme(): JSX.Element {
         return () => {
             console.log('Componente desconstruido');
         }
-    }, []);
+    }, [navigate, id]);
 
     if(loading) {
         return (
