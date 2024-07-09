@@ -36,6 +36,25 @@ function Filme(): JSX.Element {
         }
     }, [navigate, id]);
 
+    function salvarFilme() {
+        const listaFilme: string | null = localStorage.getItem('@oneflix');
+        
+        let filmesSalvos: any[] = listaFilme ? JSON.parse(listaFilme) : [];
+
+        const hasFilme: boolean = filmesSalvos.some( (filmesSalvos) => {
+            return filmesSalvos.id === filme.id;
+        })
+
+        if(hasFilme) {
+            alert('Filme já na lista');
+            return;
+        }
+
+        filmesSalvos.push(filme);
+        localStorage.setItem('@oneflix', JSON.stringify(filmesSalvos));
+        alert('Sucesso!!');
+    }
+
     if(loading) {
         return (
             <div className="loading">
@@ -57,7 +76,7 @@ function Filme(): JSX.Element {
                     <strong>Avaliação: { filme.vote_average?.toFixed(2) } / 10</strong>
                 </div>
                 <div className="area__btn">
-                    <button>Salvar</button>
+                    <button onClick={ salvarFilme }>Salvar</button>
                     <button>
                         <a target="blank" rel="external" href={`https://youtube.com/results?search_query=${ filme.title } Trailer`}>Trailer</a>
                     </button>
