@@ -16,6 +16,4 @@ function Error(): JSX.Element {
     );
 }
 
-// Teste
-
 export default Error;
