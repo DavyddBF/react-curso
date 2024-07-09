@@ -36,3 +36,16 @@
     color: #116feb;
     margin-right: 14px;
 }
+
+.meus__filmes div button {
+    border: none;
+    font-weight: 700;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.meus__filmes div button:hover {
+    transition: all .5s;
+    background-color: #116feb;
+    color: #fff;
+}
