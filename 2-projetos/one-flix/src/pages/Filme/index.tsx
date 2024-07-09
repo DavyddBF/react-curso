@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 import api from "../../services/api";
 import FilmeType from "../../filmes";
@@ -46,13 +47,13 @@ function Filme(): JSX.Element {
         })
 
         if(hasFilme) {
-            alert('Filme já na lista');
+            toast.warn('Este filme já na lista de favoritos!!');
             return;
         }
 
         filmesSalvos.push(filme);
         localStorage.setItem('@oneflix', JSON.stringify(filmesSalvos));
-        alert('Sucesso!!');
+        toast.success('Filme adicionado aos favoritos com sucesso!!');
     }
 
     if(loading) {

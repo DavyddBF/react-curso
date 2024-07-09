@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from 'react-toastify';
 import FilmeType from "../../filmes";
+
 import './favoritos.css';
 
 function Favoritos(): JSX.Element {
@@ -18,6 +20,7 @@ function Favoritos(): JSX.Element {
 
         setFilme(filmesFiltrados);
         localStorage.setItem('@oneflix', JSON.stringify(filmesFiltrados));
+        toast.success('Filme removido com sucesso!!');
     }
 
     return (
