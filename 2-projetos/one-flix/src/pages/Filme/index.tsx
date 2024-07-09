@@ -59,7 +59,7 @@ function Filme(): JSX.Element {
                 <div className="area__btn">
                     <button>Salvar</button>
                     <button>
-                        <a href="">Trailer</a>
+                        <a target="blank" rel="external" href={`https://youtube.com/results?search_query=${ filme.title } Trailer`}>Trailer</a>
                     </button>
                 </div>
             </div>
