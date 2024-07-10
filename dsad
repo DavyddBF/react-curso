@@ -1,0 +1,1268 @@
+[33mcommit 815406948af50d25fd8b449492d58f22ab1ee6cb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 16:27:57 2024 -0300
+
+    Removendo arquivo
+
+[33mcommit 34e67637c475a41fd9898dd6bc07338918361f41[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 16:22:16 2024 -0300
+
+    Ajustando gitignore
+
+[33mcommit 8a70512514c2b275d6c37db59a479de41ce509b2[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 16:19:21 2024 -0300
+
+    Ajustando gitignore
+
+[33mcommit b7ac2cbc347079de6e7995bda80aec975d39ce38[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:55:45 2024 -0300
+
+    Configurando firebase
+
+[33mcommit f696e88715a3f3fcc87b2dea87fe71cf34922788[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:49:59 2024 -0300
+
+    Adicionando firebase ao projeto
+
+[33mcommit 17e2fcee7c7789d0d4f57783eb4d8892e137ffb2[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:41:18 2024 -0300
+
+    Criando arq que vai conectar o firebase db
+
+[33mcommit 248a9d9a328257f4d5a1c164d0a737a9cec0e57f[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:40:21 2024 -0300
+
+    Criando código base para App
+
+[33mcommit d69c44fc002c94205f2fc5b3eb20224f08859209[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:33:57 2024 -0300
+
+    Deletando img
+
+[33mcommit 68e6df8d6a9ef6fa5b88b2c9bc79d24062b4a6d6[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:32:41 2024 -0300
+
+    Apagando código padrão
+
+[33mcommit 9d7e85ae0ef940561e2d76d6f9e0474a702971e9[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Wed Jul 10 15:31:07 2024 -0300
+
+    Criando projeto p/ aprender firebase
+
+[33mcommit d8366521670e6bfd2fc038e0efdd73cacd482d0d[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 16:18:38 2024 -0300
+
+    Trocando os alerts por toasts
+
+[33mcommit 0ba8bd60655a0e5bc9ad0dd33cd553f8eeeef28e[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 16:16:43 2024 -0300
+
+    Adicionando estilo ao btn de Excluir
+
+[33mcommit 3038058aa23c50a24f253e762215808c3200bd70[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 16:16:05 2024 -0300
+
+    Importando o ToastContainer e add a duração
+
+[33mcommit ce50c4abc32003dc7987012dcbf5cfb69c57a698[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 16:03:04 2024 -0300
+
+    Adicionando React Toastify ao projeto
+
+[33mcommit 07a1d8391703031717a4cdaae099951874e603f2[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 15:56:33 2024 -0300
+
+    Adicionando funcionalidade do btn excluir filmes
+
+[33mcommit a52d12d27626a678609ca6e64fb5a1cb22432a94[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 15:36:56 2024 -0300
+
+    Criando a lógica de mostrar filmes adicionados
+
+[33mcommit 9a0dd23ca60cd4d16949076f96ef628416d460ce[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 15:36:08 2024 -0300
+
+    Adicioando estilo aos filmes favoritos
+
+[33mcommit 1cadf6aa87a0f5500dff7374661c2a7617feeda2[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 15:07:34 2024 -0300
+
+    Fazendo imports
+
+[33mcommit 092d36b940e2eaa0b234eb9ea1fce97197560846[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 14:59:28 2024 -0300
+
+    Criando arquivo css
+
+[33mcommit 6812a70e1bd56fe9d10d73ad3f4afae0cd191216[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 12:12:43 2024 -0300
+
+    Criando a lógicado btn Salvar
+
+[33mcommit 5e23352508e7bd22cf16b9adcb017b55ab913e48[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:50:06 2024 -0300
+
+    Criando opção de busca do trailer no yt
+
+[33mcommit a8df5bd2e35bb25b1cb02ddfb7a55a4ad4c0d6d6[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:41:32 2024 -0300
+
+    Ajustando opção de erro | Dependências - useEffect
+
+[33mcommit c2252f184dfc9f3512cff01eae0886bd2a44dabc[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:36:06 2024 -0300
+
+    Adicionando espaçamento
+
+[33mcommit e3f4471ca74fcae748b01739a71bc6bfbf615fcc[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:25:18 2024 -0300
+
+    Removendo Footer
+
+[33mcommit 750b4ffd3f3c8f7620318f3a951af59aeff10f6b[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:20:20 2024 -0300
+
+    Removendo commit teste
+
+[33mcommit db82e1a02a74a38361ae33686cd68832f0057339[m
+Merge: 997c30f 8d7bba0
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:17:27 2024 -0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+[33mcommit 997c30fc1e1e34e02c15c051cb914684c75c7a2d[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 11:08:11 2024 -0300
+
+    Removendo commit de teste
+
+[33mcommit 3842d462f93c33330ae3d08bcc834804f0a58daf[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 10:15:33 2024 -0300
+
+    Adicionando commit teste
+
+[33mcommit 8d7bba0dcdccf26d836b2ba9344a96cf3aeee237[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue Jul 9 10:15:33 2024 -0300
+
+    Adicionando commit teste
+
+[33mcommit 0f22a6fd21c733649ce0e6bb7c83a590886e119a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 27 18:25:40 2024 -0300
+
+    Trocando cor de um btn hover e adicionando transição
+
+[33mcommit 5b87d500654683ff21a8cf84f265ee5de957dc8d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 27 18:25:07 2024 -0300
+
+    Adicionando botões e avaliação | E add Divs
+
+[33mcommit 22489ab870f09e55679a0fe5a7a12a66ae1acf9e[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 27 18:24:27 2024 -0300
+
+    Criando estilo de filmes
+
+[33mcommit d9c46b78e01e96561aec35cfcc66b3a4ae6b6944[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 26 17:03:17 2024 -0300
+
+    Adicionando tipagem
+
+[33mcommit 817e97d340872dd85a61979d264a363a3921134c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon Jun 24 11:29:21 2024 -0300
+
+    Adicionando a sinopse do filme
+
+[33mcommit 2f9656ad73a677751e97824195bafe86ce6fc3fb[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon Jun 24 11:29:09 2024 -0300
+
+    Mudando nome da classe
+
+[33mcommit 102fc8c2a89714b9fe185112fcdd8d8c85e0c276[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 16:11:07 2024 -0300
+
+    Ajustando o nome da interface dentro da home
+
+[33mcommit f50a4f62b21107b7e51d370356ec159fcf8ec5ab[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 16:10:47 2024 -0300
+
+    Tela loading | Criando conteudo
+
+[33mcommit b8ab9c1457eee1847e50ce59ed59c6c816cc546e[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 16:09:46 2024 -0300
+
+    Adicionando estilo na tela de loading
+
+[33mcommit f9ef70231fcc49d2d22966ab93d0c4ecb40dff7a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 16:09:35 2024 -0300
+
+    Ajustando o nome da interface
+
+[33mcommit 54b0297304b53a39397d26bbd273407fb2fc39ab[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 15:40:35 2024 -0300
+
+    Importando && Trazendo a api
+
+[33mcommit 72f763658e2a6e465589ec53bd6f8a72f1bdd893[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 15:40:10 2024 -0300
+
+    Criando css
+
+[33mcommit 1248c2d53c4a719281363fa0b05a343d2e747991[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:39:44 2024 -0300
+
+    Modificando o subtitulo para mostrar o pathname
+
+[33mcommit 0930a9dd46965a0f7e26ae4b8ae2660b44dc9b8d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:30:58 2024 -0300
+
+    adicionando hover aos btn acessar
+
+[33mcommit 0bace5b84963c3ba8b4bd3914b5c94d6be6807ec[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:30:41 2024 -0300
+
+    Criando css para tela de erro
+
+[33mcommit a19e7768d5145255485148d76a2adf2267d41833[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:30:28 2024 -0300
+
+    Mudando a tela de erro
+
+[33mcommit 856695f137d0db3d9cc564c0b441359ebcae8b38[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:14:51 2024 -0300
+
+    Importando css
+
+[33mcommit cfb7eccd57f957a86f45c8524114baf56454833f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:13:45 2024 -0300
+
+    Adicionando classe container
+
+[33mcommit 1b6a02dd8bae7d29c199b1b9dcaeb9c24af01f12[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 13:13:35 2024 -0300
+
+    Criando arquivo de estilos para erros
+
+[33mcommit 6e8554913bea7e900b9f176cd30efe00f1f7d2fe[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 12:31:29 2024 -0300
+
+    Centralizando div
+
+[33mcommit 64342e77a9b9c4aa0ee6305c033e57760cd1750b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 21 12:29:47 2024 -0300
+
+    Adicionando tela de loading
+
+[33mcommit 4188bd2405ebdf740c7f6af1ac9fc6b66f561476[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon Jun 17 19:34:32 2024 -0300
+
+    Atualizando README
+
+[33mcommit 8f5c9d2cce12ea3eac1c6d90e71de3c263c5658b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 11:05:26 2024 -0300
+
+    Adicionando footer ao RouterApp
+
+[33mcommit 4cd25fcf7c72d996a52e3e57222ad640d5fa451b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 11:05:01 2024 -0300
+
+    Criado function do footer
+
+[33mcommit 27751b01507299c71ca6ccbb74d511d4e1039d0d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 11:04:45 2024 -0300
+
+    Criando estilo do footer
+
+[33mcommit 59c8a53c693be73ec2fe29a144afda6104075a8f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 10:58:23 2024 -0300
+
+    Removendo slice para carregar todos os filmes
+
+[33mcommit 82b9f274d7dce61f5204c8c598cfd89b34709764[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 10:58:06 2024 -0300
+
+    Estilizando o botão de acessar
+
+[33mcommit 37f0f6fcf027467a21beb96730653218b5f75ec9[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 10:57:50 2024 -0300
+
+    Criando arquivo de script do footer
+
+[33mcommit 84ca555c16fb481c261647550cb321fe13190a49[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Sat Jun 15 10:57:25 2024 -0300
+
+    Criando arquivo de estilos do footer
+
+[33mcommit 959615612fecc46799d084c69477cb3033f2d0f1[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 18:07:55 2024 -0300
+
+    Reduzindo numero de filmes pego na api
+
+[33mcommit 2facd5b2e6d39468bb6cf60c65ec02cbfca91690[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 18:07:40 2024 -0300
+
+    Criando estilo para home
+
+[33mcommit 21a2f677afd65a9b7c6a1f7612db8f0c96e0e8ed[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 11:54:11 2024 -0300
+
+    Mostrando na tela o titulo e imagem
+
+[33mcommit b8385396ddd6dcf41841fa1d9ce9aaf5531f9190[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 11:46:02 2024 -0300
+
+    Criando interface de Filme
+
+[33mcommit 13855db426af55a7fa0cc5a2d633e61451b40718[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 11:45:51 2024 -0300
+
+    Ajustando tipagem e criando a logica de requisição
+
+[33mcommit 1dedc2992fc6e3890907df4e05f6a94c45114b03[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 11:01:23 2024 -0300
+
+    Criando arquivo de interface
+
+[33mcommit f1d587c342717b0ac862f77661747d9d623d5327[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 11:01:05 2024 -0300
+
+    Mostrando resultados
+
+[33mcommit 7368058cd3b3c20fd4b832c7c390835ea8ce8e9f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 10:58:00 2024 -0300
+
+    adicionando o .create que esqueci
+
+[33mcommit aceebd2e8a8c5326b77356aa09812a51c6c04990[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 10:57:44 2024 -0300
+
+    Criando logica que traz os dados da api
+
+[33mcommit 5192bff2d75f12c37bde11f73e1ef7484f70f8de[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 10:31:11 2024 -0300
+
+    Usando axios para pegar a api
+
+[33mcommit fd51f2b4fd88bd21b471fff4beca4689610c7869[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 10:27:23 2024 -0300
+
+    Criando arquivo da Api
+
+[33mcommit 32babf0a03a7c15d929e0ccabbe4cdce657e8129[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Fri Jun 14 10:27:11 2024 -0300
+
+    Adicionando axios ao projeto
+
+[33mcommit de81fbb73630a308cc083ce7931b490494709cfd[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 10:08:41 2024 -0300
+
+    Adicionando Header as Rotas
+
+[33mcommit 4cb08ae9a72dfbe42030651d325e39ff28753cc1[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 10:08:23 2024 -0300
+
+    Criando Header
+
+[33mcommit 137d399e2ec67250a8355c9ba040892509268e1a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 10:07:55 2024 -0300
+
+    Criando estilo do cabeçalho
+
+[33mcommit 70b43569229eed34c9a5e90c64dcf7b1d9b39733[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:51:10 2024 -0300
+
+    Modificando o Nome da function de Rotas
+
+[33mcommit 8d77dfd4e2b4809ebcd9b9f6c614e61a21239498[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:50:53 2024 -0300
+
+    Criando function Header
+
+[33mcommit bcf43d5cb2ce70f1203e8352311483266970bdf5[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:50:38 2024 -0300
+
+    Adicionando Rotas ao App
+
+[33mcommit 9c164d8d79022c7d5b934e3e71235fd9cb05c845[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:47:30 2024 -0300
+
+    Criando arquivos de Header
+
+[33mcommit f6962770bc7edd60d8791b5db40b015716747ae5[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:46:16 2024 -0300
+
+    Adicionando Favoritos a rotas
+
+[33mcommit 0a317f9856809ccab53dd93b16c75cecc1a7cba2[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:44:29 2024 -0300
+
+    Criando function Favoritos
+
+[33mcommit 0ac192af8b94b906030ba3533de17a95521b18b0[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:36:32 2024 -0300
+
+    Adicionando a uma rota a pagina de Erro
+
+[33mcommit 1f7131c52650cfaaf673dc3ba6c3f5b05f7f6575[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:35:15 2024 -0300
+
+    Adicionando na rota filme o id
+
+[33mcommit b2b223ebd5093aefa32264c463c3e8d7e2d0f9df[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:32:10 2024 -0300
+
+    Adicionando br
+
+[33mcommit ebe77d646a92d838b2256c726fec9a6229f15493[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:30:54 2024 -0300
+
+    Adicionando Links
+
+[33mcommit 7d2c50cd9fac4d9453dfc7b86f355286de1963cc[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:29:05 2024 -0300
+
+    Criando function de Error
+
+[33mcommit 30006d6a76930d91ec62c2e6cb1ecdc0d9e07b34[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:25:53 2024 -0300
+
+    Criando / Configurando Rotas
+
+[33mcommit a77c8ea3f52745979330ab3e471a511cc596902b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:20:16 2024 -0300
+
+    Adicionando router-dom ao projeto
+
+[33mcommit 982b3d916e8af0f6f50de7337448e94bf97d7536[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:18:59 2024 -0300
+
+    Criando function de Filme
+
+[33mcommit 008ae4705cd8a4f5ff721a7721b152589811223b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:17:30 2024 -0300
+
+    Criando arquivo Filme
+
+[33mcommit 3122890ce7e5844bc34503b3199b75d45647cdf6[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:14:47 2024 -0300
+
+    Criando function de Home
+
+[33mcommit 4257377d904b648704a481a5e319d9822c6baa52[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:13:40 2024 -0300
+
+    Criando arquivo de Home
+
+[33mcommit 081713bf46e50ec9aaea02e093230f530989fd3c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:13:02 2024 -0300
+
+    Criando function App
+
+[33mcommit bc81a687f217821ad787f3d5e640178fcdf8a053[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:11:37 2024 -0300
+
+    Criando reset
+
+[33mcommit 2730cbac77e71733ca7f5c743c829037db70014e[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:10:37 2024 -0300
+
+    Modificando nome do projeto
+
+[33mcommit efc0f56c90283b994413676a83e7c9b35edd5609[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:10:14 2024 -0300
+
+    Removendo codigo padrão
+
+[33mcommit 1201f15f469e1af59e2c6ee71a52fe3813c22186[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu Jun 13 09:08:48 2024 -0300
+
+    Criando projeto
+
+[33mcommit 6de020123d31e94678b7d96f1e606a7128fcd261[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:51:14 2024 -0300
+
+    Pegando id | useParams
+
+[33mcommit af0635df2b3c325e1f44239efa5904021eed3935[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:50:51 2024 -0300
+
+    Adicionando Link
+
+[33mcommit 83dcd977f0046c2877e3c2238f37c6b341977103[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:47:06 2024 -0300
+
+    Importando Produto
+
+[33mcommit 46960f7f92588514a63f75b6d8c2e61af9c0ea1b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:46:53 2024 -0300
+
+    Criando componente de produto
+
+[33mcommit 2a6585ea4ae68f0cc23e85ae61f6f1f68716292f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:46:44 2024 -0300
+
+    Adicionando tipagem
+
+[33mcommit 9e69c05e06422d7bc731dcb6d103256c45477820[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:42:13 2024 -0300
+
+    Importando rota para Erro de pesquisa de pag
+
+[33mcommit 0a601319c226820ae8fcd2736b1dda27a4d311ce[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:41:57 2024 -0300
+
+    Criando mensagem de erro
+
+[33mcommit a1def4222d8812a42377c70391a4e9b89806c7ee[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:13:10 2024 -0300
+
+    Removendo Links
+
+[33mcommit 54dfb5632ba1082935f7e36c94161f42450d4463[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:10:10 2024 -0300
+
+    Importando Footer
+
+[33mcommit 173026f07297e6d80471b9255bf52761ae5d604d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:10:00 2024 -0300
+
+    Adicionando classe Container para os componentes
+
+[33mcommit 96f51ebfd3d9634758292fe1e10a32563a730c4f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:09:38 2024 -0300
+
+    Adicionando tamanho aos containers
+
+[33mcommit b994c42df55a37732a64ec713400afb3d948c706[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:09:17 2024 -0300
+
+    Mudando iniciar de conatato para maiusculo
+
+[33mcommit afa573a7be2fa8e2d04c6ac251d3e440b28f7e01[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:09:00 2024 -0300
+
+    Centralizando texto
+
+[33mcommit 156da84108acfeb253495254a0566970c3e72a1a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:08:51 2024 -0300
+
+    Importando css e criando tag strong
+
+[33mcommit 373b30d0bdcc0159d4f122d1bbacc8f57a9b807d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:01:45 2024 -0300
+
+    Criando conteudo do Footer
+
+[33mcommit 69dbb9847e87cf173dd9e86c4cbb417b067e770c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:01:35 2024 -0300
+
+    Adicionando uma div nos Links
+
+[33mcommit ff41039bd3bdd70b65aa1c9eee0ab78207b48316[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 14:01:19 2024 -0300
+
+    Criando estilo do Header
+
+[33mcommit baa8a27a38f686aad65d4ae5e70af0381642aa11[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:36:55 2024 -0300
+
+    Mudando tag
+
+[33mcommit 2ac0ec89db77009ae336b8b4fb2ed560c8a16700[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:36:10 2024 -0300
+
+    Adicionando nome ao Header
+
+[33mcommit 4914f2c9fb7f974543ab5301acc086a603c79afc[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:35:55 2024 -0300
+
+    Adicionando Header
+
+[33mcommit 6c55b2a7c0e754cc8c4fbc367b3cc8b46ecff9b4[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:32:09 2024 -0300
+
+    Adicionando tipo na function
+
+[33mcommit 4ab1887606ea7ca98834b4a23e154d5fd09253ab[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:31:46 2024 -0300
+
+    Criando Header
+
+[33mcommit a66de6785285d76d242e6f73aa710cac751c3138[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:29:36 2024 -0300
+
+    Criando arquivo Header
+
+[33mcommit 0adbb4daa335b8fd09958c6244501fbf211fc916[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:29:20 2024 -0300
+
+    Criando aquivo de Footer
+
+[33mcommit 2acadf485e5d4ccdf15883dfc7c630df71e9416d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:14:22 2024 -0300
+
+    Pulando linha
+
+[33mcommit bbdf25bc575edb8f86c45cb2fb31fbef0903a064[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:14:15 2024 -0300
+
+    Criando conteudo
+
+[33mcommit 3d19441d769724531b23bbb8374be6ccb514174b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:12:11 2024 -0300
+
+    Criando rota para contato
+
+[33mcommit c60669aa962e817560f75c1547596324e8f48cb4[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:11:58 2024 -0300
+
+    Adicionando link para Contato
+
+[33mcommit 4694f93f0f6fe2e555778610da978ad699276250[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:10:14 2024 -0300
+
+    Criando função contato e add links
+
+[33mcommit ac33f2c34922932cc20f65a12e740f5e3f50768b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:08:13 2024 -0300
+
+    Criando index.tsx para Contato
+
+[33mcommit d61b1e75ca1feeb18b20f136eb7b79709109b3f2[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 12:07:35 2024 -0300
+
+    Importando links de rotas
+
+[33mcommit 09b917bae80899da010cca4f41df7f6f46fe5e61[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 11:38:37 2024 -0300
+
+    Ajustando espaçametos
+
+[33mcommit dabdb81050bde993536167f0052a25062474bcb5[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 11:33:30 2024 -0300
+
+    Adicionando tipo explicito nas funções
+
+[33mcommit fba522b530a667246fee56714d1000ce0539cd83[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 11:30:51 2024 -0300
+
+    Trocando extensão para tsx
+
+[33mcommit cf67760f947603e0342ce01f85e2d9c7e0441884[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 11:30:20 2024 -0300
+
+    Removendo arquivo
+
+[33mcommit da56326765790c4c74525bb246132dd2c3a77243[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 11:30:09 2024 -0300
+
+    Importando Rotas em App
+
+[33mcommit 000666dafdaa5abbcb43f160d6c7c19399e5a680[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 12 11:20:54 2024 -0300
+
+    Importando e criando função Rotas
+
+[33mcommit 4baa8111ced2f9857457f7b4a41d27f633529605[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 17:39:31 2024 -0300
+
+    Criando arquivos de rotas
+
+[33mcommit df7884e4cab24f95794e6c5e4f25193b933e1ae5[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:53:38 2024 -0300
+
+    Criando componente
+
+[33mcommit 2ce67656a4e40dad80a94bb91c1ea06a752294f2[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:51:43 2024 -0300
+
+    Criando arquivo do Sobre
+
+[33mcommit 8539e151e21dc8fe8b3eb024e62f54c6142cb3f7[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:51:33 2024 -0300
+
+    Criando arquivo da Home
+
+[33mcommit adf06ec92b61af843e1d41a4a8af10483b18e823[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:51:21 2024 -0300
+
+    Modificando texto
+
+[33mcommit 7e146c04a790a449e30784ed15922c3a625297a7[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:51:10 2024 -0300
+
+    Adicionando rotas
+
+[33mcommit ed13eb0b3c9470712619758ffe3876a21e3b6edb[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:16:15 2024 -0300
+
+    Update index.css
+
+[33mcommit bfc39587223d16746b95a1a389d2c8612412d540[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:13:38 2024 -0300
+
+    Update App.tsx
+
+[33mcommit 3fda6d663859dc1b342e4545a8f2ca4601f7d5d5[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:12:03 2024 -0300
+
+    Adicionando reset simples
+
+[33mcommit 130930f8576c03a49003fca371f793b11bde349b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:11:16 2024 -0300
+
+    Removendo estilo
+
+[33mcommit 3784b12ee34f4cd55c4fe1c4e2999c179c043cbe[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:11:06 2024 -0300
+
+    Removendo código padrão
+
+[33mcommit 6830dd12d6efbc6b4e5f4b9d7e581155de9300ac[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:10:53 2024 -0300
+
+    Removendo estilos
+
+[33mcommit 6e579ca8ab7f1445b7f78a63f982955854c22b06[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:10:42 2024 -0300
+
+    Atualizando README
+
+[33mcommit 1ef3fa01cd4a24b1d76296b621957cf8690ff884[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed Jun 5 16:10:32 2024 -0300
+
+    Trocando titulo
+
+[33mcommit 273167fa49c2e96d1ae33538e5cf05f88fa30f7c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue Jun 4 19:14:41 2024 -0300
+
+    Criando projeto de rotas
+
+[33mcommit f0680b89b5c5cdd3d593ba6f60f22a8a326f79e8[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue Jun 4 18:52:16 2024 -0300
+
+    Adicionando estilo aos cards
+
+[33mcommit 724679f1a7ec3993169c96b9cc345f61eee2e6a1[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue Jun 4 18:44:02 2024 -0300
+
+    Adicionando className
+
+[33mcommit 31337578762c68a25fdbbbfbee1b9cd15204a1d7[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue Jun 4 18:42:05 2024 -0300
+
+    Criando artigo que contem infos
+
+[33mcommit 1136da3e1cbd95dd3efcb0d9c4d82a5e019a6944[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue Jun 4 18:34:57 2024 -0300
+
+    Adicionando um titulo
+
+[33mcommit 690746e67b8e04e83d7e3cd3b390fa2643643214[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue Jun 4 18:34:46 2024 -0300
+
+    Criando um estilo simples
+
+[33mcommit 2dfd7650b3bc2840347becb491d9f8a5bf32a007[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon Jun 3 16:22:45 2024 -0300
+
+    Update App.js
+
+[33mcommit 47745a70b5fb7e958df68e16052bc0786287e6cf[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:28:03 2024 -0300
+
+    Carregando api http
+
+[33mcommit 2e49a1ce9b316035854584688ea78d4e693927d0[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:17:15 2024 -0300
+
+    Apagando comentarios
+
+[33mcommit f043d713fc34f96f7f193e2e4051364983746beb[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:16:19 2024 -0300
+
+    Deletando
+
+[33mcommit 36fcb1b2e4a890c53871f35878703e1698b47e1c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:13:01 2024 -0300
+
+    Importando hooks
+
+[33mcommit 58b447f26529334854b69a4b240ec0198645fce6[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:12:25 2024 -0300
+
+    Removendo import
+
+[33mcommit 88c3702a631460fe2d904231f360003bdac8315d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:12:06 2024 -0300
+
+    Removendo codigo padrão
+
+[33mcommit bf00eacb0f7969518a967b205506956d4068164a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:11:56 2024 -0300
+
+    Removendo estilos
+
+[33mcommit e8e7a1763bab266148697d1d7b353ca96658b373[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:11:22 2024 -0300
+
+    Removendo commits
+
+[33mcommit c57a721c9a6ec80c5d417482f19a966d68cf2166[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:10:36 2024 -0300
+
+    Deletando arquivos
+
+[33mcommit 503bafde826678a45eef521fb37d86c6036acb99[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 16:09:51 2024 -0300
+
+    Criando projeto
+
+[33mcommit 21c362eb1240189b23ff60596859edc28a886868[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 15:52:15 2024 -0300
+
+    Ajustando condicional
+
+[33mcommit 0aa5cba8971acde6d6c332691a215f5d84ed2557[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 15:51:45 2024 -0300
+
+    Ajustando condicional
+
+[33mcommit 7dafa8d20be2c3d313ef7d717b29781021dbaf56[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 15:39:32 2024 -0300
+
+    Usando useCallback
+
+[33mcommit c6f1e73bb5bbe305e74bd34be2c7183051994904[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 13:31:23 2024 -0300
+
+    Usando useMemo pra nº de tarefas
+
+[33mcommit 4a903b45563e1de4f0594d9b02c3ab23bf071d80[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 28 13:30:48 2024 -0300
+
+    Dando espaçamento
+
+[33mcommit ba8b51d357e7bac61379148ce38c2761419f5751[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon May 27 16:34:26 2024 -0300
+
+    Atualizando tarefas com as tarefas salvas no localStorage
+
+[33mcommit bb37659775ad03813cc6e5ae1f36a644d2cad875[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon May 27 16:29:29 2024 -0300
+
+    Adicionando tarefas ao localStorage
+
+[33mcommit 04542832a5bb3cdbdedcb8ebd8ae9993b5c7b25a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon May 27 16:26:32 2024 -0300
+
+    Criando função e mudando tarefas
+
+[33mcommit 890b98ebe2cf2ef36ee723dfdeb71eced33248c9[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Mon May 27 16:25:31 2024 -0300
+
+    Importando useEffect
+
+[33mcommit 0f18544d936550e5f4fbd74b7f52195f37020e9a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 20:41:57 2024 -0300
+
+    Criando input
+
+[33mcommit 027975656c55d39c61419134b0ef415764aae399[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 20:37:17 2024 -0300
+
+    Criando botão que adiciona palavras
+
+[33mcommit eb131c4b484c0a9587ccda2d4526ccc92d35ab6b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 20:34:03 2024 -0300
+
+    Criando uma lista usando states
+
+[33mcommit 3a99f63687df2103cc16426cae1de8c6972f754c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 16:17:58 2024 -0300
+
+    Criando reset básico
+
+[33mcommit dbf9b3481c66258a55e7c98f13e81466ee51e032[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 16:17:47 2024 -0300
+
+    Atualizando README
+
+[33mcommit ab2e5e0016f229e2b20b1dd9348546375e476a8b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 16:17:38 2024 -0300
+
+    Removendo commits
+
+[33mcommit 2d51c50e968bf0059ef25e4be76839ce04db40d6[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Thu May 23 16:15:42 2024 -0300
+
+    Criando projeto
+
+[33mcommit b9ce63c29f3f1a2d9559b94c9274a911727a946c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed May 22 17:59:46 2024 -0300
+
+    Criando lógica da função limpar
+
+[33mcommit 6dea52f8d79f1361966eeedea2cfb5d62c774ad6[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed May 22 17:25:49 2024 -0300
+
+    Modicando o nome da função
+
+[33mcommit 97cbc468a5214dc99b641a7efde6b516d42e933d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed May 22 17:21:22 2024 -0300
+
+    Criando a lógica de iniciar e parar o cronometro
+
+[33mcommit 934f827e3ab25f7fc94e6236a81bc594ba4b9f0b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed May 22 16:57:52 2024 -0300
+
+    Criando funções dos btn's
+
+[33mcommit 26c8401422202d4fd5666153cc7db0242997876d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Wed May 22 16:46:10 2024 -0300
+
+    Estilizando o cronometro
+
+[33mcommit 71ea8623572b33ebb48f957012ac2836f726124b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:52:06 2024 -0300
+
+    Importando o css
+
+[33mcommit a783dd124363baff32e0dd223c80cedf232c6ca2[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:51:52 2024 -0300
+
+    Adicionando um reset simples
+
+[33mcommit fdbae5ae732fb0dbfa3c370bb4c96f5e1fd4bbae[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:51:40 2024 -0300
+
+    Adionando img cronometro no projeto
+
+[33mcommit 66ceb8bd820b3ebb5cf9edb4d66b3172e9515b71[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:51:24 2024 -0300
+
+    Criando conteudo principal
+
+[33mcommit 9524b460947f1a257e452b8d2f0f0f50ecde1953[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:51:11 2024 -0300
+
+    Removendo estilo
+
+[33mcommit a81504026330635e1960034ff02a5740914a4716[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:41:29 2024 -0300
+
+    Criando componente com classe
+
+[33mcommit 70e41b3c4e71867c0633f0c6d310a00346445688[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:41:14 2024 -0300
+
+    Criando um reset simples
+
+[33mcommit afb833b46219d1fb9f64a4fd403c5429281fa5d4[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:32:48 2024 -0300
+
+    Atualizando README
+
+[33mcommit 74df6ad04b9183d8147e8e12f3c41aef27e2581f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:32:40 2024 -0300
+
+    Removendo commits
+
+[33mcommit c6cd77cd74dc37c892823f98d3d3eb16a8cb96bd[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:31:26 2024 -0300
+
+    Removendo conteudo
+
+[33mcommit 1d7f4caacdc2cacf16170afdb1b06dddfad71264[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:31:12 2024 -0300
+
+    Removendo imports
+
+[33mcommit 1741c3f8cf6b075c6e819918e8deb15791fd660d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:31:02 2024 -0300
+
+    Removendo arquivos
+
+[33mcommit 4def6526c6bcc8a533868549e65001ac47ceeb0f[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:25:26 2024 -0300
+
+    Create package-lock.json
+
+[33mcommit 8be1214a3a3a036668d17cf0d181fc058eedc10b[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 21 19:25:14 2024 -0300
+
+    Apagando conteudo
+
+[33mcommit 0d726d1f3682e60206335889f38865c738f2048a[m
+Author: DavyddBF <davydextreme460@gmail.com>
+Date:   Tue May 21 18:59:59 2024 -0300
+
+    Modificando Titulo
+
+[33mcommit 2db5660cae110f9087ab4f3808994eaec7dddd00[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 21:05:59 2024 -0300
+
+    Criando projeto
+
+[33mcommit a2782f2322eee267bc1200c645edc0e14fe1da23[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 19:48:04 2024 -0300
+
+    Criando função que quebraBiscoito e adicionando evento
+
+[33mcommit e07e2ca0e7e03d541dfe3574b5379b38badb11aa[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 19:33:51 2024 -0300
+
+    Criando estilo
+
+[33mcommit 69d4a5698d37c2d5370d012f64eef74f8ebe0697[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 19:31:00 2024 -0300
+
+    Adicionando frases e criando componente botão
+
+[33mcommit d1223bd5a3e87d6d360294eed6fcb53d67ef9a44[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 19:30:29 2024 -0300
+
+    Adicionando img ao projeto
+
+[33mcommit 7787868be8cf90d4735142a5b898ea976fbd8351[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:35:07 2024 -0300
+
+    Criando classe componente
+
+[33mcommit 01b59a933e58756dd188dad064a24b1af7927d6a[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:32:49 2024 -0300
+
+    Atualizando README
+
+[33mcommit 2b38e75f8720c62ff13a0e82e4e6e21735317c3c[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:32:15 2024 -0300
+
+    Removendo comentários
+
+[33mcommit 7cb87a64c1c759b37eb64aa3eaa2115e208ef8e8[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:32:02 2024 -0300
+
+    Removendo conteudo
+
+[33mcommit eeef6cb4584006ee51b6bdc0980a3acbef7b323d[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:31:50 2024 -0300
+
+    Removendo imports
+
+[33mcommit 8de681d895ccc474ab51cfb508a666f5fe9f9fc4[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:31:39 2024 -0300
+
+    Excluindo arquivos
+
+[33mcommit b76ee9c0550060122ca5c3e2821027da27c277b5[m
+Author: Davyd Ferreira <100801538+DavyddBF@users.noreply.github.com>
+Date:   Tue May 14 17:27:16 2024 -0300
+
+    Criando novo projeto
+
+[33mcommit e0b2a69de4
