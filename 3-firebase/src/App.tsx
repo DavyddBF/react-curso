@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { /*doc, setDoc,*/ addDoc, collection } from 'firebase/firestore';
+import {  /*setDoc,*/ doc, addDoc, collection, getDoc } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
@@ -37,6 +37,17 @@ function App(): JSX.Element {
         });
     }
 
+    async function buscarUser() {
+        await getDoc(doc(db, 'user', '2'))
+        .then((snapshot) => {
+            setUser(snapshot.data()?.user ?? 'Erro ao buscar dado');
+            setIdade(snapshot.data()?.idade ?? 'Erro ao buscar dado');
+        })
+        .catch(() => {
+            console.log('Algo deu errado!!')
+        });
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
@@ -59,6 +70,7 @@ function App(): JSX.Element {
                 />
 
                 <button onClick={ adicionar }>Cadastrar</button>
+                <button onClick={ buscarUser }>Buscar user</button>
             </div>
         </div>
     );
