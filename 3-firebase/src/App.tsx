@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import {  /*setDoc,*/ doc, addDoc, collection, getDoc } from 'firebase/firestore';
+import {  /*setDoc,*/ doc, addDoc, collection, getDoc, getDocs } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
     const [user, setUser] = useState('');
     const [idade, setIdade] = useState('');
+
+    const [users, setUsers] = useState<any[]>([]);
 
     async function adicionar() {
         // Código que adiciona infos no firebase porém com id estático
@@ -48,6 +50,26 @@ function App(): JSX.Element {
         });
     }
 
+    async function buscarTodosUsers() {
+        await getDocs(collection(db, 'user'))
+        .then((snapshot) => {
+            let lista: any[] = [];
+
+            snapshot.forEach((cadaUser) => {
+                lista.push({
+                    id: cadaUser.id,
+                    user: cadaUser.data().user,
+                    idade: cadaUser.data().idade
+                });
+            });
+
+            setUsers(lista);
+        })
+        .catch(() => {
+            console.log('Houve um erro ao buscar todos os usuários');
+        });
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
@@ -71,6 +93,20 @@ function App(): JSX.Element {
 
                 <button onClick={ adicionar }>Cadastrar</button>
                 <button onClick={ buscarUser }>Buscar user</button>
+                <button onClick={ buscarTodosUsers }>Buscar todos users</button>
+
+                <ul>
+                    {
+                        users.map((cadaUser) => {
+                            return (
+                                <li key={cadaUser.id}>
+                                    <span>User: { cadaUser.user }</span> <br/>
+                                    <span>Idade: { cadaUser.idade }</span> <br/><br/>
+                                </li>
+                            );
+                        })
+                    }
+                </ul>
             </div>
         </div>
     );
