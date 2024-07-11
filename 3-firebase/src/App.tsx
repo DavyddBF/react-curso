@@ -1,9 +1,11 @@
+import { useState } from 'react';
+import { doc, setDoc } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
-    function adicionar() {
-        alert('Olá mundo')
+    async function adicionar() {
+        
     }
 
     return (
@@ -12,10 +14,16 @@ function App(): JSX.Element {
 
             <div className='container'>
                 <label>Titulo:</label>
-                <input type='text' placeholder='Digite o titulo' />
+                <input 
+                    type='text' 
+                    placeholder='Digite o titulo' 
+                />
 
                 <label>Autor:</label>
-                <input type="text" placeholder='Autor do post' />
+                <input 
+                    type="text" 
+                    placeholder='Autor do post' 
+                />
 
                 <button onClick={ adicionar }>Cadastrar</button>
             </div>
