@@ -4,8 +4,22 @@ import { db } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
+    const [user, setUser] = useState('');
+    const [idade, setIdade] = useState('');
+
     async function adicionar() {
-        
+        await setDoc(doc(db, 'user', '3'), {
+            user: user,
+            idade: idade
+        })
+        .then(() => {
+            console.log('Deu tudo certo');
+            setUser('');
+            setIdade('');
+        })
+        .catch((erro) => {
+            console.log('Aconteceu um erro ' + erro);
+        });
     }
 
     return (
@@ -13,16 +27,20 @@ function App(): JSX.Element {
             <h1>Firebase + React</h1>
 
             <div className='container'>
-                <label>Titulo:</label>
+                <label>User:</label>
                 <input 
                     type='text' 
-                    placeholder='Digite o titulo' 
+                    placeholder='Digite o seu nome/user'
+                    value={ user }
+                    onChange={ (evento) => setUser(evento.target.value) }
                 />
 
-                <label>Autor:</label>
+                <label>Idade:</label>
                 <input 
                     type="text" 
-                    placeholder='Autor do post' 
+                    placeholder='Digite sua idade'
+                    value={ idade }
+                    onChange={ (evento) => setIdade(evento.target.value) }
                 />
 
                 <button onClick={ adicionar }>Cadastrar</button>
