@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { doc, setDoc } from 'firebase/firestore';
+import { /*doc, setDoc,*/ addDoc, collection } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
@@ -8,7 +8,22 @@ function App(): JSX.Element {
     const [idade, setIdade] = useState('');
 
     async function adicionar() {
-        await setDoc(doc(db, 'user', '3'), {
+        // Código que adiciona infos no firebase porém com id estático
+
+        // await setDoc(doc(db, 'user', '3'), {
+        //     user: user,
+        //     idade: idade
+        // })
+        // .then(() => {
+        //     console.log('Deu tudo certo');
+        //     setUser('');
+        //     setIdade('');
+        // })
+        // .catch((erro) => {
+        //     console.log('Aconteceu um erro ' + erro);
+        // });
+
+        await addDoc(collection(db, 'user'), {
             user: user,
             idade: idade
         })
