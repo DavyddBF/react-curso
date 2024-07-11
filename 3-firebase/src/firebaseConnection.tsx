@@ -1,0 +1,1 @@
+// Arquivo de esboço para infos do firebase!!
