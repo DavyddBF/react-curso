@@ -4,12 +4,17 @@ import { db } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
-    const [user, setUser] = useState('');
-    const [idade, setIdade] = useState('');
+    const [user, setUser] = useState<string>('');
+    const [idade, setIdade] = useState<string>('');
 
-    const [users, setUsers] = useState<any[]>([]);
+    interface Users {
+        id: string,
+        user: string,
+        idade: string
+    }
+    const [users, setUsers] = useState<Users[]>([]);
 
-    async function adicionar() {
+    async function adicionar(): Promise<void> {
         // Código que adiciona infos no firebase porém com id estático
 
         // await setDoc(doc(db, 'user', '3'), {
@@ -39,7 +44,7 @@ function App(): JSX.Element {
         });
     }
 
-    async function buscarUser() {
+    async function buscarUser(): Promise<void> {
         await getDoc(doc(db, 'user', '2'))
         .then((snapshot) => {
             setUser(snapshot.data()?.user ?? 'Erro ao buscar dado');
@@ -50,10 +55,10 @@ function App(): JSX.Element {
         });
     }
 
-    async function buscarTodosUsers() {
+    async function buscarTodosUsers(): Promise<void> {
         await getDocs(collection(db, 'user'))
         .then((snapshot) => {
-            let lista: any[] = [];
+            let lista: Users[] = [];
 
             snapshot.forEach((cadaUser) => {
                 lista.push({
