@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {  /*setDoc,*/ doc, addDoc, collection, getDoc, getDocs, updateDoc } from 'firebase/firestore';
+import {  /*setDoc,*/ doc, addDoc, collection, getDoc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
@@ -92,6 +92,13 @@ function App(): JSX.Element {
         })
     }
 
+    async function excluirUser(id: string) {
+        await deleteDoc(doc(db, 'user', id))
+        .then(() => {
+            buscarTodosUsers();
+        })
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
@@ -135,6 +142,7 @@ function App(): JSX.Element {
                                     <strong>ID: { cadaUser.id }</strong> <br/>
                                     <span>User: { cadaUser.user }</span> <br/>
                                     <span>Idade: { cadaUser.idade }</span> <br/><br/>
+                                    <button onClick={ () => excluirUser(cadaUser.id) }>Excluir</button> <br/><br/>
                                 </li>
                             );
                         })
