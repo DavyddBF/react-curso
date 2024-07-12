@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import {  /*setDoc,*/ doc, addDoc, collection, getDoc, getDocs } from 'firebase/firestore';
+import {  /*setDoc,*/ doc, addDoc, collection, getDoc, getDocs, updateDoc } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
     const [user, setUser] = useState<string>('');
     const [idade, setIdade] = useState<string>('');
+    const [idUser, setIdUser] = useState<string>('');
 
     interface Users {
         id: string,
@@ -75,11 +76,35 @@ function App(): JSX.Element {
         });
     }
 
+    async function atualizarUser(): Promise<void> {
+        await updateDoc(doc(db, 'user', idUser), {
+            user: user,
+            idade: idade
+        })
+        .then(() => {
+            console.log('Deu tudo certim!');
+            setIdUser('');
+            setUser('');
+            setIdade('');
+        })
+        .catch((erro) => {
+            console.log(erro);
+        })
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
 
             <div className='container'>
+                <label>ID:</label>
+                <input 
+                    type='text' 
+                    placeholder='Digite o ID a ser atualizado'
+                    value={ idUser }
+                    onChange={ (evento) => setIdUser(evento.target.value) }
+                />
+
                 <label>User:</label>
                 <input 
                     type='text' 
@@ -98,13 +123,16 @@ function App(): JSX.Element {
 
                 <button onClick={ adicionar }>Cadastrar</button>
                 <button onClick={ buscarUser }>Buscar user</button>
-                <button onClick={ buscarTodosUsers }>Buscar todos users</button>
+                <button onClick={ buscarTodosUsers }>Buscar todos users</button> <br/>
+
+                <button onClick={ atualizarUser }>Atualizar User</button>
 
                 <ul>
                     {
-                        users.map((cadaUser) => {
+                        users.map((cadaUser: Users) => {
                             return (
                                 <li key={cadaUser.id}>
+                                    <strong>ID: { cadaUser.id }</strong> <br/>
                                     <span>User: { cadaUser.user }</span> <br/>
                                     <span>Idade: { cadaUser.idade }</span> <br/><br/>
                                 </li>
