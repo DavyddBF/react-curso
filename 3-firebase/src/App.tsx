@@ -55,6 +55,8 @@ function App(): JSX.Element {
         });
     }
 
+    // Busca um user especifico
+
     // async function buscarUser(): Promise<void> {
     //     await getDoc(doc(db, 'user', '2'))
     //     .then((snapshot) => {
