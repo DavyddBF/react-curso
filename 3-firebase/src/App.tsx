@@ -10,7 +10,8 @@ import {
     deleteDoc, 
     onSnapshot
 } from 'firebase/firestore';
-import { db } from './firebase/firebaseConnection';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { db, auth } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
@@ -137,8 +138,20 @@ function App(): JSX.Element {
         })
     }
 
-    function novoUsuario() {
-
+    async function novoUsuario() {
+        await createUserWithEmailAndPassword(auth, email, senha)
+        .then(() => {
+            console.log('Cadastrado com sucesso!!!');
+            setEmail('');
+            setSenha('');
+        })
+        .catch((erro) => {
+            if(erro.code == 'auth/weak-password'){
+                alert('Senha muito fraca!!');
+            } else if (erro.code == 'auth/email-already-in-use') {
+                alert('Email já existe!!');
+            }
+        });
     }
 
     return (
@@ -162,7 +175,7 @@ function App(): JSX.Element {
                     value={ senha }
                     onChange={ (evento) => setSenha(evento.target.value) }
                 />
-
+                <br/>
                 <button onClick={ novoUsuario }>Cadastrar</button>
             </div>
 
