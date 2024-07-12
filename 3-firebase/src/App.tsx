@@ -22,6 +22,8 @@ function App(): JSX.Element {
 
     const [user, setUser] = useState<string>('');
     const [idade, setIdade] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [senha, setSenha] = useState<string>('');
     const [users, setUsers] = useState<Users[]>([]);
 
     const idadeFiltrada = users.filter((user) => Number(user.idade) > 20);
@@ -135,11 +137,40 @@ function App(): JSX.Element {
         })
     }
 
+    function novoUsuario() {
+
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
 
             <div className='container'>
+                <h2>Cadastro Email e Senha</h2>
+                <label>Email:</label>
+                <input 
+                    type="email" 
+                    placeholder='Insira seu email'
+                    value={ email }
+                    onChange={ (evento) => setEmail(evento.target.value) }
+                />
+
+                <label>Senha:</label>
+                <input 
+                    type="password" 
+                    placeholder='Insira sua senha'
+                    value={ senha }
+                    onChange={ (evento) => setSenha(evento.target.value) }
+                />
+
+                <button onClick={ novoUsuario }>Cadastrar</button>
+            </div>
+
+                <br/><br/>
+                <hr/>
+
+            <div className='container'>
+                <h2>Cadastro User e Idade</h2>
                 <label>User:</label>
                 <input 
                     type='text' 
@@ -161,35 +192,35 @@ function App(): JSX.Element {
                 <button className='btn' onClick={ buscarTodosUsers }>Buscar usuários</button> <br/>
 
                 <div className='flex'>
-                <ul>
-                    {
-                        users.map((cadaUser: Users) => {
-                            return (
-                                <li key={cadaUser.id}>
-                                    <strong>ID: { cadaUser.id }</strong> <br/>
-                                    <span>User: { cadaUser.user }</span> <br/>
-                                    <span>Idade: { cadaUser.idade }</span> <br/>
-                                    <button onClick={ () => excluirUser(cadaUser.id) }>Excluir</button>
-                                    <button onClick={ () => atualizarUser(cadaUser.id) }>Editar</button> <br/><br/>
-                                </li>
-                            );
-                        })
-                    }
-                </ul>
-                <ul>
-                    
-                    {
-                        idadeFiltrada.map((maioresVinte) => {
-                            return (
-                                <li key={maioresVinte.id}>
-                                    <strong>ID: { maioresVinte.id }</strong> <br/>
-                                    <span>User: { maioresVinte.user }</span> <br/>
-                                    <span>Idade: { maioresVinte.idade }</span> <br/> <br/>
-                                </li>
-                            );
-                        })
-                    }
-                </ul>
+                    <ul>
+                        {
+                            users.map((cadaUser: Users) => {
+                                return (
+                                    <li key={cadaUser.id}>
+                                        <strong>ID: { cadaUser.id }</strong> <br/>
+                                        <span>User: { cadaUser.user }</span> <br/>
+                                        <span>Idade: { cadaUser.idade }</span> <br/>
+                                        <button onClick={ () => excluirUser(cadaUser.id) }>Excluir</button>
+                                        <button onClick={ () => atualizarUser(cadaUser.id) }>Editar</button> <br/><br/>
+                                    </li>
+                                );
+                            })
+                        }
+                    </ul>
+                    <ul>
+                        
+                        {
+                            idadeFiltrada.map((maioresVinte) => {
+                                return (
+                                    <li key={maioresVinte.id}>
+                                        <strong>ID: { maioresVinte.id }</strong> <br/>
+                                        <span>User: { maioresVinte.user }</span> <br/>
+                                        <span>Idade: { maioresVinte.idade }</span> <br/> <br/>
+                                    </li>
+                                );
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         </div>
