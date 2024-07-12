@@ -1,19 +1,20 @@
 import { useState } from 'react';
-import {  /*setDoc,*/ doc, addDoc, collection, getDoc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
+import {  /*setDoc,*/ doc, addDoc, collection, /*getDoc,*/ getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
 function App(): JSX.Element {
-    const [user, setUser] = useState<string>('');
-    const [idade, setIdade] = useState<string>('');
-    const [idUser, setIdUser] = useState<string>('');
-
     interface Users {
         id: string,
         user: string,
         idade: string
     }
+
+    const [user, setUser] = useState<string>('');
+    const [idade, setIdade] = useState<string>('');
     const [users, setUsers] = useState<Users[]>([]);
+
+    const idadeFiltrada = users.filter((user) => Number(user.idade) > 20);
 
     async function adicionar(): Promise<void> {
         // Código que adiciona infos no firebase porém com id estático
@@ -45,16 +46,16 @@ function App(): JSX.Element {
         });
     }
 
-    async function buscarUser(): Promise<void> {
-        await getDoc(doc(db, 'user', '2'))
-        .then((snapshot) => {
-            setUser(snapshot.data()?.user ?? 'Erro ao buscar dado');
-            setIdade(snapshot.data()?.idade ?? 'Erro ao buscar dado');
-        })
-        .catch(() => {
-            console.log('Algo deu errado!!')
-        });
-    }
+    // async function buscarUser(): Promise<void> {
+    //     await getDoc(doc(db, 'user', '2'))
+    //     .then((snapshot) => {
+    //         setUser(snapshot.data()?.user ?? 'Erro ao buscar dado');
+    //         setIdade(snapshot.data()?.idade ?? 'Erro ao buscar dado');
+    //     })
+    //     .catch(() => {
+    //         console.log('Algo deu errado!!')
+    //     });
+    // }
 
     async function buscarTodosUsers(): Promise<void> {
         await getDocs(collection(db, 'user'))
@@ -76,14 +77,14 @@ function App(): JSX.Element {
         });
     }
 
-    async function atualizarUser(): Promise<void> {
-        await updateDoc(doc(db, 'user', idUser), {
+    async function atualizarUser(id: string): Promise<void> {
+        await updateDoc(doc(db, 'user', id), {
             user: user,
             idade: idade
         })
         .then(() => {
             console.log('Deu tudo certim!');
-            setIdUser('');
+            buscarTodosUsers();
             setUser('');
             setIdade('');
         })
@@ -104,14 +105,6 @@ function App(): JSX.Element {
             <h1>Firebase + React</h1>
 
             <div className='container'>
-                <label>ID:</label>
-                <input 
-                    type='text' 
-                    placeholder='Digite o ID a ser atualizado'
-                    value={ idUser }
-                    onChange={ (evento) => setIdUser(evento.target.value) }
-                />
-
                 <label>User:</label>
                 <input 
                     type='text' 
@@ -126,14 +119,13 @@ function App(): JSX.Element {
                     placeholder='Digite sua idade'
                     value={ idade }
                     onChange={ (evento) => setIdade(evento.target.value) }
-                />
+                /> <br/>
 
-                <button onClick={ adicionar }>Cadastrar</button>
-                <button onClick={ buscarUser }>Buscar user</button>
-                <button onClick={ buscarTodosUsers }>Buscar todos users</button> <br/>
+                <button className='btn' onClick={ adicionar }>Cadastrar</button>
+                {/* <button onClick={ buscarUser }>Buscar user</button> */}
+                <button className='btn' onClick={ buscarTodosUsers }>Buscar usuários</button> <br/>
 
-                <button onClick={ atualizarUser }>Atualizar User</button>
-
+                <div className='flex'>
                 <ul>
                     {
                         users.map((cadaUser: Users) => {
@@ -141,13 +133,29 @@ function App(): JSX.Element {
                                 <li key={cadaUser.id}>
                                     <strong>ID: { cadaUser.id }</strong> <br/>
                                     <span>User: { cadaUser.user }</span> <br/>
-                                    <span>Idade: { cadaUser.idade }</span> <br/><br/>
-                                    <button onClick={ () => excluirUser(cadaUser.id) }>Excluir</button> <br/><br/>
+                                    <span>Idade: { cadaUser.idade }</span> <br/>
+                                    <button onClick={ () => excluirUser(cadaUser.id) }>Excluir</button>
+                                    <button onClick={ () => atualizarUser(cadaUser.id) }>Editar</button> <br/><br/>
                                 </li>
                             );
                         })
                     }
                 </ul>
+                <ul>
+                    
+                    {
+                        idadeFiltrada.map((maioresVinte) => {
+                            return (
+                                <li key={maioresVinte.id}>
+                                    <strong>ID: { maioresVinte.id }</strong> <br/>
+                                    <span>User: { maioresVinte.user }</span> <br/>
+                                    <span>Idade: { maioresVinte.idade }</span> <br/> <br/>
+                                </li>
+                            );
+                        })
+                    }
+                </ul>
+                </div>
             </div>
         </div>
     );
