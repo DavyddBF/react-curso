@@ -1,5 +1,14 @@
-import { useState } from 'react';
-import {  /*setDoc,*/ doc, addDoc, collection, /*getDoc,*/ getDocs, updateDoc, deleteDoc } from 'firebase/firestore';
+import { useState, useEffect } from 'react';
+import {  
+    /*setDoc,*/ 
+    doc, 
+    addDoc, 
+    collection, 
+    /*getDoc,*/ 
+    getDocs, 
+    updateDoc, 
+    deleteDoc 
+} from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
 
