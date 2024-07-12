@@ -7,7 +7,8 @@ import {
     /*getDoc,*/ 
     getDocs, 
     updateDoc, 
-    deleteDoc 
+    deleteDoc, 
+    onSnapshot
 } from 'firebase/firestore';
 import { db } from './firebase/firebaseConnection';
 import './App.css';
@@ -24,6 +25,26 @@ function App(): JSX.Element {
     const [users, setUsers] = useState<Users[]>([]);
 
     const idadeFiltrada = users.filter((user) => Number(user.idade) > 20);
+
+    useEffect(() => {
+        async function carregaUser() {
+            const unsub = onSnapshot(collection(db, 'user'), (snapshot) => {
+                let listaUser: Users[] = [];
+
+                snapshot.forEach((cadaUser) => {
+                    listaUser.push({
+                        id: cadaUser.id,
+                        user: cadaUser.data().user,
+                        idade: cadaUser.data().idade
+                    });
+                });
+    
+                setUsers(listaUser);
+            });
+        }
+
+        carregaUser();
+    }, []);
 
     async function adicionar(): Promise<void> {
         /*
@@ -99,7 +120,6 @@ function App(): JSX.Element {
         })
         .then(() => {
             console.log('Deu tudo certim!');
-            buscarTodosUsers();
             setUser('');
             setIdade('');
         })
@@ -111,7 +131,7 @@ function App(): JSX.Element {
     async function excluirUser(id: string) {
         await deleteDoc(doc(db, 'user', id))
         .then(() => {
-            buscarTodosUsers();
+            console.log('Deletado!!')
         })
     }
 
