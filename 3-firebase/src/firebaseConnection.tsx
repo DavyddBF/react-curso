@@ -1,10 +1,20 @@
 // Arquivo de esboço para infos do firebase!!
 
 
-// import { initializeApp } from "firebase/app";
-// import { getFirestore } from "firebase/firestore";
+// import { FirebaseApp, initializeApp } from "firebase/app";
+// import { Firestore, getFirestore } from "firebase/firestore";
 
-// const firebaseConfig = {
+// interface firebaseConfig {
+//     apiKey: string,
+//     authDomain: string,
+//     projectId: string,
+//     storageBucket: string,
+//     messagingSenderId: string,
+//     appId: string,
+//     measurementId: string
+// }
+
+// const firebaseConfig: firebaseConfig = {
 //     apiKey: "Sua apiKey aqui",
 //     authDomain: "Seu authDomain aqui",
 //     projectId: "Seu projectId aqui",
@@ -14,7 +24,7 @@
 //     measurementId: "Seu measurementId aqui"
 // };
 
-// const firebaseApp = initializeApp(firebaseConfig);
-// const db = getFirestore(firebaseApp);
+// const firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
+// const db: Firestore = getFirestore(firebaseApp);
 
 // export { db };
