@@ -26,20 +26,22 @@ function App(): JSX.Element {
     const idadeFiltrada = users.filter((user) => Number(user.idade) > 20);
 
     async function adicionar(): Promise<void> {
-        // Código que adiciona infos no firebase porém com id estático
+        /*
+        Código que adiciona infos no firebase porém com id estático
 
-        // await setDoc(doc(db, 'user', '3'), {
-        //     user: user,
-        //     idade: idade
-        // })
-        // .then(() => {
-        //     console.log('Deu tudo certo');
-        //     setUser('');
-        //     setIdade('');
-        // })
-        // .catch((erro) => {
-        //     console.log('Aconteceu um erro ' + erro);
-        // });
+        await setDoc(doc(db, 'user', '3'), {
+            user: user,
+            idade: idade
+        })
+        .then(() => {
+            console.log('Deu tudo certo');
+            setUser('');
+            setIdade('');
+        })
+        .catch((erro) => {
+            console.log('Aconteceu um erro ' + erro);
+        });
+        */
 
         await addDoc(collection(db, 'user'), {
             user: user,
@@ -55,18 +57,20 @@ function App(): JSX.Element {
         });
     }
 
-    // Busca um user especifico
+    /*
+    Busca um user especifico
 
-    // async function buscarUser(): Promise<void> {
-    //     await getDoc(doc(db, 'user', '2'))
-    //     .then((snapshot) => {
-    //         setUser(snapshot.data()?.user ?? 'Erro ao buscar dado');
-    //         setIdade(snapshot.data()?.idade ?? 'Erro ao buscar dado');
-    //     })
-    //     .catch(() => {
-    //         console.log('Algo deu errado!!')
-    //     });
-    // }
+    async function buscarUser(): Promise<void> {
+        await getDoc(doc(db, 'user', '2'))
+        .then((snapshot) => {
+            setUser(snapshot.data()?.user ?? 'Erro ao buscar dado');
+            setIdade(snapshot.data()?.idade ?? 'Erro ao buscar dado');
+        })
+        .catch(() => {
+            console.log('Algo deu errado!!')
+        });
+    }
+    */
 
     async function buscarTodosUsers(): Promise<void> {
         await getDocs(collection(db, 'user'))
