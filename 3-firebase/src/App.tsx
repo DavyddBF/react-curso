@@ -141,7 +141,7 @@ function App(): JSX.Element {
         })
     }
 
-    async function novoUsuario() {
+    async function novoUsuario(): Promise<void> {
         await createUserWithEmailAndPassword(auth, email, senha)
         .then(() => {
             console.log('Cadastrado com sucesso!!!');
@@ -157,7 +157,7 @@ function App(): JSX.Element {
         });
     }
 
-    async function loginUsuario() {
+    async function loginUsuario(): Promise<void> {
         await signInWithEmailAndPassword(auth, email, senha)
         .then((value) => {
             console.log('Logado com sucesso!!');
