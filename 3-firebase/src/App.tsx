@@ -12,7 +12,8 @@ import {
 } from 'firebase/firestore';
 import { 
     createUserWithEmailAndPassword,
-    signInWithEmailAndPassword
+    signInWithEmailAndPassword,
+    signOut
  } from 'firebase/auth';
 import { db, auth } from './firebase/firebaseConnection';
 import './App.css';
@@ -183,6 +184,12 @@ function App(): JSX.Element {
         })
     }
 
+    async function fazerLogout(): Promise<void> {
+        await signOut(auth);
+        setLoginUser(false);
+        setDetalheUser({});
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
@@ -191,7 +198,8 @@ function App(): JSX.Element {
                 loginUser && (
                     <div>
                         <strong>Seja bem-vindo(a) - Você está logado(a)</strong> <br/>
-                        <span>Id: {detalheUser.uid} - Email: {detalheUser.email}</span>
+                        <span>Id: {detalheUser.uid} - Email: {detalheUser.email}</span> <br/>
+                        <button onClick={ fazerLogout }>Sair</button>
                     </div>
                 )
             }
