@@ -30,6 +30,9 @@ function App(): JSX.Element {
     const [senha, setSenha] = useState<string>('');
     const [users, setUsers] = useState<Users[]>([]);
 
+    const [loginUser, setLoginUser] = useState<boolean>(false);
+    const [detalheUser, setDetalheUser] = useState<any>({});
+
     const idadeFiltrada = users.filter((user) => Number(user.idade) > 20);
 
     useEffect(() => {
@@ -47,6 +50,9 @@ function App(): JSX.Element {
     
                 setUsers(listaUser);
             });
+
+
+            return () => unsub();
         }
 
         carregaUser();
@@ -162,6 +168,13 @@ function App(): JSX.Element {
         .then((value) => {
             console.log('Logado com sucesso!!');
             console.log(value);
+
+            setDetalheUser({
+                uid: value.user.uid,
+                email: value.user.email
+            });
+            setLoginUser(true);
+
             setEmail('');
             setSenha('');
         })
@@ -173,6 +186,15 @@ function App(): JSX.Element {
     return (
         <div>
             <h1>Firebase + React</h1>
+
+            {
+                loginUser && (
+                    <div>
+                        <strong>Seja bem-vindo(a) - Você está logado(a)</strong> <br/>
+                        <span>Id: {detalheUser.uid} - Email: {detalheUser.email}</span>
+                    </div>
+                )
+            }
 
             <div className='container'>
                 <h2>Cadastro Email e Senha</h2>
