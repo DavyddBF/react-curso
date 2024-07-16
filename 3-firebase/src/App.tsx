@@ -10,7 +10,10 @@ import {
     deleteDoc, 
     onSnapshot
 } from 'firebase/firestore';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { 
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword
+ } from 'firebase/auth';
 import { db, auth } from './firebase/firebaseConnection';
 import './App.css';
 
@@ -154,6 +157,19 @@ function App(): JSX.Element {
         });
     }
 
+    async function loginUsuario() {
+        await signInWithEmailAndPassword(auth, email, senha)
+        .then((value) => {
+            console.log('Logado com sucesso!!');
+            console.log(value);
+            setEmail('');
+            setSenha('');
+        })
+        .catch(() => {
+            console.log('Não foi possível fazer o login!!')
+        })
+    }
+
     return (
         <div>
             <h1>Firebase + React</h1>
@@ -177,6 +193,7 @@ function App(): JSX.Element {
                 />
                 <br/>
                 <button onClick={ novoUsuario }>Cadastrar</button>
+                <button onClick={ loginUsuario }>Login</button>
             </div>
 
                 <br/><br/>
@@ -221,7 +238,6 @@ function App(): JSX.Element {
                         }
                     </ul>
                     <ul>
-                        
                         {
                             idadeFiltrada.map((maioresVinte) => {
                                 return (
