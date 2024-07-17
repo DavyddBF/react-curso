@@ -13,7 +13,8 @@ import {
 import { 
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    signOut
+    signOut,
+    onAuthStateChanged
  } from 'firebase/auth';
 import { db, auth } from './firebase/firebaseConnection';
 import './App.css';
@@ -57,6 +58,28 @@ function App(): JSX.Element {
         }
 
         carregaUser();
+    }, []);
+
+    useEffect(() => {
+        async function checarLogin(): Promise<void> {
+            await onAuthStateChanged(auth, (user) => {
+                if(user) {
+                    // Caso tenha um usuário logado
+                    console.log(user);
+                    setDetalheUser({
+                        uid: user.uid,
+                        email: user.email
+                    });
+                    setLoginUser(true);
+                } else {
+                    // Caso não tenha nenhum usuário logado
+                    setDetalheUser({});
+                    setLoginUser(false);
+                }
+            })
+        }
+
+        checarLogin();
     }, []);
 
     async function adicionar(): Promise<void> {
