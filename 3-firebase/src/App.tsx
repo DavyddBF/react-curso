@@ -35,9 +35,9 @@ function App(): JSX.Element {
     const [loginUser, setLoginUser] = useState<boolean>(false);
     const [detalheUser, setDetalheUser] = useState<any>({});
 
-    const idadeFiltrada = users.filter((user) => Number(user.idade) > 20);
+    const idadeFiltrada: Users[] = users.filter((user) => Number(user.idade) > 20);
 
-    useEffect(() => {
+    useEffect((): void => {
         async function carregaUser() {
             const unsub = onSnapshot(collection(db, 'user'), (snapshot) => {
                 let listaUser: Users[] = [];
