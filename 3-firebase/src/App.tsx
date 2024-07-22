@@ -8,13 +8,16 @@ import {
     getDocs, 
     updateDoc, 
     deleteDoc, 
-    onSnapshot
+    onSnapshot,
+    QuerySnapshot,
+    DocumentData
 } from 'firebase/firestore';
 import { 
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     signOut,
-    onAuthStateChanged
+    onAuthStateChanged,
+    UserCredential
  } from 'firebase/auth';
 import { db, auth } from './firebase/firebaseConnection';
 import './App.css';
@@ -54,15 +57,15 @@ function App(): JSX.Element {
             });
 
 
-            return () => unsub();
+            return (): void => unsub();
         }
 
         carregaUser();
     }, []);
 
-    useEffect(() => {
+    useEffect((): void => {
         async function checarLogin(): Promise<void> {
-            await onAuthStateChanged(auth, (user) => {
+            await onAuthStateChanged(auth, (user): void => {
                 if(user) {
                     // Caso tenha um usuário logado
                     console.log(user);
@@ -109,7 +112,7 @@ function App(): JSX.Element {
             setUser('');
             setIdade('');
         })
-        .catch((erro) => {
+        .catch((erro: any): void => {
             console.log('Aconteceu um erro ' + erro);
         });
     }
@@ -131,7 +134,7 @@ function App(): JSX.Element {
 
     async function buscarTodosUsers(): Promise<void> {
         await getDocs(collection(db, 'user'))
-        .then((snapshot) => {
+        .then((snapshot: QuerySnapshot<DocumentData, DocumentData>) => {
             let lista: Users[] = [];
 
             snapshot.forEach((cadaUser) => {
@@ -144,7 +147,7 @@ function App(): JSX.Element {
 
             setUsers(lista);
         })
-        .catch(() => {
+        .catch((): void => {
             console.log('Houve um erro ao buscar todos os usuários');
         });
     }
@@ -154,7 +157,7 @@ function App(): JSX.Element {
             user: user,
             idade: idade
         })
-        .then(() => {
+        .then((): void => {
             console.log('Deu tudo certim!');
             setUser('');
             setIdade('');
@@ -166,19 +169,19 @@ function App(): JSX.Element {
 
     async function excluirUser(id: string) {
         await deleteDoc(doc(db, 'user', id))
-        .then(() => {
+        .then((): void => {
             console.log('Deletado!!')
         })
     }
 
     async function novoUsuario(): Promise<void> {
         await createUserWithEmailAndPassword(auth, email, senha)
-        .then(() => {
+        .then((): void => {
             console.log('Cadastrado com sucesso!!!');
             setEmail('');
             setSenha('');
         })
-        .catch((erro) => {
+        .catch((erro: any): void => {
             if(erro.code == 'auth/weak-password'){
                 alert('Senha muito fraca!!');
             } else if (erro.code == 'auth/email-already-in-use') {
@@ -189,7 +192,7 @@ function App(): JSX.Element {
 
     async function loginUsuario(): Promise<void> {
         await signInWithEmailAndPassword(auth, email, senha)
-        .then((value) => {
+        .then((value: UserCredential): void => {
             console.log('Logado com sucesso!!');
             console.log(value);
 
@@ -202,7 +205,7 @@ function App(): JSX.Element {
             setEmail('');
             setSenha('');
         })
-        .catch(() => {
+        .catch((): void => {
             console.log('Não foi possível fazer o login!!')
         })
     }
