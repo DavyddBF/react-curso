@@ -1,0 +1,20 @@
+/* Criando o estilo padrão/reset do projeto */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #15171a;
+    color: #fff;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
