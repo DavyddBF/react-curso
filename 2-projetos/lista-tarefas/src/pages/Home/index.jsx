@@ -10,7 +10,7 @@ function Home() {
       <h1>Lista de Tarefas</h1>
       <span>Gerencie suas tarefas de uma forma prática</span>
 
-      <form>
+      <form className='home-form'>
         <input 
           type="text"
           placeholder="Digite seu email..."
