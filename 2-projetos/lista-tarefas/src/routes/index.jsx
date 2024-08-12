@@ -11,5 +11,5 @@ function RouterApp() {
     </Routes>
   );
 }
-// teste
+
 export default RouterApp;
