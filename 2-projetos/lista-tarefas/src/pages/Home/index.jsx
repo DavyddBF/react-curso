@@ -1,16 +1,28 @@
 import { useState } from 'react';
 import './home.css';
 
+import { Link } from "react-router-dom";
+
 function Home() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  function handleLogin(event) {
+    event.preventDefault();
+
+    if(email !== '' && password !== '') {
+      alert('Teste');
+    } else {
+      alert('Preencha todos os campos!!');
+    }
+  }
 
   return (
     <div className='home-container'>
       <h1>Lista de Tarefas</h1>
       <span>Gerencie suas tarefas de uma forma prática</span>
 
-      <form className='home-form'>
+      <form className='home-form' onSubmit={ handleLogin }>
         <input 
           type="text"
           placeholder="Digite seu email..."
@@ -28,6 +40,8 @@ function Home() {
 
         <button type="submit">Acessar</button>
       </form>
+
+      <Link className='button-link' to='/register'>Não possui uma conta? Cadastra-se</Link>
     </div>
   );
 }
