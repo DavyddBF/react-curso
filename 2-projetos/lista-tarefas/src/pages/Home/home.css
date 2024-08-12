@@ -30,3 +30,26 @@
   border-radius: 4px;
   padding: 0 8px;
 }
+
+.home-form button {
+  height: 36px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #3366ff;
+  color: #fff;
+}
+
+.home-form textarea {
+  margin-bottom: 36px;
+  border: 0;
+  height: 90px;
+  resize: none;
+  border-radius: 4px;
+}
+
+.button-link {
+  color: #b4b8bb;
+  text-decoration: none;
+  margin: 14px 0;
+  font-size: 14px;
+}
